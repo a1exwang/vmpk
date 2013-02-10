@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
     <meta name="description" content="virtual midi piano keyboard" /> 
     <meta name="keywords" content="virtual midi piano keyboard" /> 
-    <meta name="copyright" content="&copy; 2008-2010 Pedro Lopez-Cabanillas" /> 
+    <meta name="copyright" content="&copy; 2008-2013 Pedro Lopez-Cabanillas" /> 
     <title>VMPK. Virtual MIDI Piano Keyboard</title> 
     <!-- lightbox2: href="http://www.lokeshdhakar.com/projects/lightbox2/ --> 
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" /> 
@@ -96,7 +96,7 @@ Ce format a été développé par Cakewalk et est utilisé par Sonar.</p>
 des fonctionnalités à venir. N'hésitez pas à contacter l'auteur pour poser des questions, rapporter des bugs ou proposer de nouvelles fonctionnalités. 
 Vous pouvez utiliser le tracker sur le site du project 
 <a href="http://sourceforge.net/tracker2/?group_id=236429">SourceForge</a>.</p> 
-<p>Copyright (C) 2008-2010, Pedro Lopez-Cabanillas <b>&lt;plcl AT
+<p>Copyright (C) 2008-2013, Pedro Lopez-Cabanillas <b>&lt;plcl AT
 users.sourceforge.net&gt; </b></p> 
 <p>Virtual MIDI Piano Keyboard est un logiciel libre sous
 <a href="http://www.gnu.org/copyleft/gpl.html">licence GPL v3</a>.</p> 
@@ -205,11 +205,11 @@ entre n'importe quel port, matériel ou applicatif. Un autre programme pour fair
 (démarrer, arrêter et surveiller l'état). Jack fournit des cables virtuels pour connecter les ports de votre carter son et les programmes audio 
 de la même façon que des câbles virtuels MIDI mais pour l'audio.</p> 
  
-<div class="in-text-image right"> 
+<div class="in-text-image"> 
     <img src="images/qjackctl-conn.png" name="qjackctl" alt="qjackctl connections window" /> 
     <p>Connections QJackCtl sous Linux</p> 
 </div> 
- 
+
 <h2><a name="FAQ"></a>Foire aux questions</h2> 
  
 <h3>Comment afficher 88 touches sur le piano?</h3> 
@@ -241,21 +241,10 @@ $ awk -f txt2ins.awk SF2NAME.txt > SF2NAME.ins
 <p>Vous pouvez trouver le script AWK "txt2ins.awk" dans le répertoire data de VMPK</p> 
  
 <h2><a name="Download"></a>Téléchargement</h2> 
-<p>Les dernières sources ainsi que fichiers pour Windows et Mac OSX sont disponibles sur <a href="http://sourceforge.net/projects/vmpk/files/">SourceForge</a>.
-<!--#include virtual="/downloads.shtml" -->
-</p> 
-<p>Il y a aussi des paquets pour Linux :</p> 
-<ul> 
-  <!--li><a class="external" href="http://software.opensuse.org/search?baseproject=ALL&amp;p=1&amp;q=vmpk">openSUSE</a>, from the openSUSE Build Service</li --> 
-  <li><a class="external" href="http://packages.debian.org/vmpk">Debian</a></li> 
-  <li><a class="external" href="http://launchpad.net/ubuntu/+source/vmpk">Ubuntu</a></li> 
-  <li><a class="external" href="http://tangostudio.tuxfamily.org">UbuntuStudio (Tango Studio)</a></li> 
-  <li><a class="external" href="http://aur.archlinux.org/packages.php?ID=20321">Arch Linux (Aur)</a></li> 
-  <li><a class="external" href="http://www.pardus.org.tr/eng/">Pardus</a></li> 
-  <li><a class="external" href="http://packages.gentoo.org/package/media-sound/vmpk">Gentoo</a></li> 
-  <li><a class="external" href="http://packages.zenwalk.org/?q=vmpk&amp;zversion=all">Zenwalk</a></li> 
-  <li><a class="external" href="http://doc4.mandriva.org/bin/view/d4/component/vmpk?d=cooker">Mandriva (Cooker)</a></li> 
-</ul> 
+<p>Les dernières sources ainsi que fichiers pour Windows et Mac OSX sont disponibles sur <a href="http://sourceforge.net/projects/vmpk/files/">SourceForge</a>.</p>
+
+<!--#include file="downloads.shtml" -->
+
 <p>Si vous distribuez un paquet VMPK pour une autre distribution, envoyez moi un email et j'ajouterai un lien vers votre site ici.</p> 
  
 <h2><a name="Installation"></a>Installation depuis les sources</h2> 
@@ -448,29 +437,11 @@ Knob widget</li>
         </p> 
 
         <br/>
-
-		<a href="http://qt.nokia.com/qt-in-use/ambassadors/showcase">
-		  <img src="images/qt_ambassador_logo.png" width='230' alt='Qt Ambassador' name='Qt Ambassador' border='0'/>
-		</a>
-
-        <br/> 
  
         <h4>Liens du projet</h4> 
-        <ul class="vertical-navs"> 
-        <li><a href="http://midi-clorianos.blogspot.com">Blog</a></li> 
-        <li><a href="http://www.ohloh.net/p/VMPK">ohloh.net</a></li> 
-        <li><a href="http://freshmeat.net/projects/vmpk">freshmeat.net</a></li> 
-        <li><a
-href="http://qt-apps.org/content/show.php?action=content&amp;content=88233">qt-
-apps.org</a></li> 
-        <li><a href="http://apps.linuxaudio.org/apps/all/vmpk">linuxaudio.org<br/> 
-            <img src="images/lao_compact_06_filled_w100.png" name="linuxaudio" alt="linuxaudio.org" border="0" /></a></li> 
-        </ul> 
- 
-        <br/> 
-
-	<a href="http://store.ovi.com/content/132667"><img src="images/-nokia-n8-4.jpg" alt='OVI Store banner' name='OVI Store banner'></a>
-
+        
+        <!--#include file="rightlinks.shtml"-->
+        
 	<br/>
  
         <h4>Logiciels associés (multi plateforme)</h4> 
@@ -526,24 +497,13 @@ apps.org</a></li>
     </div><!-- RIGHT-COLUMN DIV ENDS --> 
  
     <div id="footer"> 
-        <p class="left">&copy; 2008-2010 Pedro Lopez-Cabanillas.</p> 
+        <p class="left">&copy; 2008-2013 Pedro Lopez-Cabanillas.</p> 
         <p class="right"><a href="index.fr.html">Haut de page</a></p> 
     </div> 
  
 </div> 
  
-<!-- Piwik --> 
-<script type="text/javascript"> 
-    var pkBaseURL = (("https:" == document.location.protocol) ? "https://apps.sourceforge.net/piwik/vmpk/" : "http://apps.sourceforge.net/piwik/vmpk/");
-    document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-</script><script type="text/javascript"> 
-    piwik_action_name = '';
-    piwik_idsite = 1;
-    piwik_url = pkBaseURL + "piwik.php";
-    piwik_log(piwik_action_name, piwik_idsite, piwik_url);
-</script> 
-<object><noscript><p><img src="http://apps.sourceforge.net/piwik/vmpk/piwik.php?idsite=1" alt="piwik" /></p></noscript></object> 
-<!-- End Piwik Tag --> 
+<!--#include file="piwik.shtml" -->
  
 </body> 
 </html> 
