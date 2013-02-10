@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="virtual midi piano keyboard" />
     <meta name="keywords" content="virtual midi piano keyboard" />
-    <meta name="copyright" content="&copy; 2008-2010 Pedro Lopez-Cabanillas" />
+    <meta name="copyright" content="&copy; 2008-2013 Pedro Lopez-Cabanillas" />
     <title>VMPK. Virtual MIDI Piano Keyboard</title>
     <!-- lightbox2: href="http://www.lokeshdhakar.com/projects/lightbox2/ -->
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
@@ -101,7 +101,7 @@ características pendientes. Por favor, no dudes en contactar con el autor para 
 preguntas, informar de fallos, y proponer nuevas funcionalidades. Puedes usar el 
 sistema de seguimiento en el 
 <a href="http://sourceforge.net/tracker2/?group_id=236429">sitio del proyecto de SourceForge</a>.</p>
-<p>Copyright (C) 2008-2010, Pedro Lopez-Cabanillas <b>&lt;plcl AT
+<p>Copyright (C) 2008-2013, Pedro Lopez-Cabanillas <b>&lt;plcl AT
 users.sourceforge.net&gt; </b></p>
 <p>Virtual MIDI Piano Keyboard es software libre bajo los términos de la 
 <a href="http://www.gnu.org/copyleft/gpl.html">licencia GPL v3</a>.</p>
@@ -219,7 +219,7 @@ principal de este programa es controlar el demonio Jack (iniciar, parar y monito
 proporciona cables de audio virtuales para conectar los puertos de la tarjeta de sonido y los programas, de 
 una forma similar a los cables MIDI virtuales, pero para datos de audio digital.</p>
 
-<div class="in-text-image right">
+<div class="in-text-image">
     <img src="images/qjackctl-conn.png" name="qjackctl" alt="ventana de conextiones de qjackctl" />
     <p>Conexiones de QJackCtl en Linux</p>
 </div>
@@ -269,21 +269,10 @@ $ awk -f txt2ins.awk SF2NAME.txt > SF2NAME.ins
 
 <h2><a name="Download"></a>Descargar</h2>
 <p>Puedes encontrar los últimos fuentes, y paquetes para Windows y Mac OSX en el <a
-href="http://sourceforge.net/projects/vmpk/files/">sitio del proyecto en SourceForge</a>.
-<!--#include virtual="/downloads.shtml" -->
-</p>
-<p>También hay paquetes Linux listos para instalar en:</p>
-<ul>
-  <!--li><a class="external" href="http://software.opensuse.org/search?baseproject=ALL&amp;p=1&amp;q=vmpk">openSUSE</a> Build Service</li-->
-  <li><a class="external" href="http://packages.debian.org/vmpk">Debian</a></li>
-  <li><a class="external" href="http://launchpad.net/ubuntu/+source/vmpk">Ubuntu</a></li>
-  <li><a class="external" href="http://tangostudio.tuxfamily.org">UbuntuStudio (Tango Studio)</a></li>
-  <li><a class="external" href="http://aur.archlinux.org/packages.php?ID=20321">Arch Linux (Aur)</a></li>
-  <li><a class="external" href="http://www.pardus.org.tr/eng/">Pardus</a></li>
-  <li><a class="external" href="http://packages.gentoo.org/package/media-sound/vmpk">Gentoo</a></li>
-  <li><a class="external" href="http://packages.zenwalk.org/?q=vmpk&amp;zversion=all">Zenwalk</a></li>
-  <li><a class="external" href="http://doc4.mandriva.org/bin/view/d4/component/vmpk?d=cooker">Mandriva (Cooker)</a></li>
-</ul>
+href="http://sourceforge.net/projects/vmpk/files/">sitio del proyecto en SourceForge</a>.</p>
+
+<!--#include file="downloads.shtml" -->
+
 <p>Si usted distribuye paquetes de VMPK para otra distribución, envíeme un email e incluiré un enlace a su sitio aquí.</p> 
 
 <h2><a name="Installation"></a>Instalación desde fuentes</h2>
@@ -486,21 +475,9 @@ Botones rotatorios</li>
 
 		<br/>
 
-		<a href="http://qt.nokia.com/qt-in-use/ambassadors/showcase">
-		  <img src="images/qt_ambassador_logo.png" width='230' alt='Qt Ambassador' name='Qt Ambassador' border='0'/>
-		</a>
-
-		<br/>
-
 		<h4>Enlaces del proyecto</h4>
-		<ul class="vertical-navs">
-			<li><a href="http://midi-clorianos.blogspot.com">Blog</a></li>
-			<li><a href="http://www.ohloh.net/p/VMPK">ohloh.net</a></li>
-			<li><a href="http://freshmeat.net/projects/vmpk">freshmeat.net</a></li>
-			<li><a href="http://qt-apps.org/content/show.php?action=content&amp;content=88233">qt-apps.org</a></li>
-			<li><a href="http://apps.linuxaudio.org/apps/all/vmpk">linuxaudio.org<br/>
-				<img src="images/lao_compact_06_filled_w100.png" name="linuxaudio" alt="linuxaudio.org" border="0" /></a></li>
-		</ul>
+		
+		<!--#include file="rightlinks.shtml"-->        
 
 		<br/>
 
@@ -509,10 +486,6 @@ Botones rotatorios</li>
 		<li><a href="http://qsynth.sourceforge.net">QSynth</a></li>
 		<li><a href="http://www.fluidsynth.org">FluidSynth</a></li>
 		</ul>
-
-		<br/>
-
-		<a href="http://store.ovi.com/content/132667"><img src="images/-nokia-n8-4.jpg" alt='OVI Store banner' name='OVI Store banner'></a>
 
 		<br/>
 
@@ -543,7 +516,7 @@ Botones rotatorios</li>
 		<br/>
 
 		<a href="http://sourceforge.net/projects/vmpk">
-			<img src="http://sflogo.sourceforge.net/sflogo.php?group_id=236429&amp;type=16" width="150" height="40" border="0" alt="Get Virtual MIDI Piano Keyboard at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
+		<img src="http://sflogo.sourceforge.net/sflogo.php?group_id=236429&amp;type=16" width="150" height="40" border="0" alt="Get Virtual MIDI Piano Keyboard at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
 		<p>Proyecto hospedado en <a href="http://sourceforge.net/projects/vmpk">SourceForge.net</a></p>
 
 		<br/>
@@ -561,24 +534,14 @@ Botones rotatorios</li>
 	</div><!-- RIGHT-COLUMN DIV ENDS -->
 
 	<div id="footer">
-		<p class="left">&copy; 2008-2010 Pedro Lopez-Cabanillas.</p>
+		<p class="left">&copy; 2008-2013 Pedro Lopez-Cabanillas.</p>
 		<p class="right"><a href="index.es.html">Subir</a></p>
 	</div>
 
 </div>
 
-<!-- Piwik -->
-<script type="text/javascript">
-    var pkBaseURL = (("https:" == document.location.protocol) ? "https://apps.sourceforge.net/piwik/vmpk/" : "http://apps.sourceforge.net/piwik/vmpk/");
-    document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-</script><script type="text/javascript">
-    piwik_action_name = '';
-    piwik_idsite = 1;
-    piwik_url = pkBaseURL + "piwik.php";
-    piwik_log(piwik_action_name, piwik_idsite, piwik_url);
-</script>
-<object><noscript><p><img src="http://apps.sourceforge.net/piwik/vmpk/piwik.php?idsite=1" alt="piwik" /></p></noscript></object>
-<!-- End Piwik Tag -->
+<!--#include file="piwik.shtml" -->
 
 </body>
 </html>
+
