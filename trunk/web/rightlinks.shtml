@@ -1,24 +1,31 @@
-<ul class="vertical-navs">
-<li><a href="http://midi-clorianos.blogspot.com">Blog</a></li>
-<li><a href="http://www.ohloh.net/p/VMPK">ohloh.net</a></li>
-<li><a href="http://freecode.com/projects/vmpk">freecode.com</a></li>
-<li><a href="http://qt-apps.org/content/show.php?action=content&amp;content=88233">qt-apps.org</a></li>
-<li><a href="http://www.hitsquad.com/smm/">Hitsquad Music Software Downloads</a>
-<!-- Hitsquad Conf = 4433865528.fbfd27c0dba16d7f412e141819dc3ad41e45bba1 -->
-</li>
-<li><a href="http://apps.linuxaudio.org/apps/all/vmpk">linuxaudio.org<br/>
-  <img src="images/lao_compact_06_filled_w100.png" name="linuxaudio" alt="linuxaudio.org" border="0" /></a>
-</li>
-</ul>
-<br/>
-<a href="http://store.ovi.com/content/210572">
-  <img src="images/-nokia-n8-2.jpg" width='230' alt='vmpk&amp;fluidsynth' name='vmpk&amp;fluidsynth' border='0'/>
-</a>
-<br/>
-<a href="http://store.ovi.com/content/132667">
-  <img src="images/-nokia-n8-4.jpg" alt='OVI Store banner' name='OVI Store banner'>
-</a>
-<br/>
-<a href="http://www.softpedia.com/get/Others/Home-Education/Virtual-Piano-Keyboard.shtml">
-  <img border="0" src="http://www.softpedia.com/base_img/softpedia_free_award_f.gif"/>
-</a>
+    <ul class="vertical-navs">
+      <li><a href="http://midi-clorianos.blogspot.com">Blog</a></li>
+      <li><a href="http://www.ohloh.net/p/VMPK">ohloh.net</a></li>
+      <li><a href="http://freecode.com/projects/vmpk">freecode.com</a></li>
+      <li><a
+href="http://qt-apps.org/content/show.php?action=content&amp;content=88233">qt-apps.org</a></li>
+      <li><a href="http://www.hitsquad.com/smm/">Hitsquad Music Software
+          Downloads</a>
+        <!-- Hitsquad Conf = 4433865528.fbfd27c0dba16d7f412e141819dc3ad41e45bba1 -->
+      </li>
+      <li><a href="http://apps.linuxaudio.org/apps/all/vmpk">linuxaudio.org<br>
+          <img src="images/lao_compact_06_filled_w100.png"
+            name="linuxaudio" alt="linuxaudio.org" border="0"></a> </li>
+    </ul>
+    <br>
+    <a
+href="https://play.google.com/store/apps/details?id=net.sourceforge.vmpk">
+      <img alt="Android app on Google Play"
+        src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png">
+    </a> <br>
+    <a href="http://store.ovi.com/content/210572"> <img
+        src="images/-nokia-n8-2.jpg" alt="vmpk&amp;fluidsynth"
+        name="vmpk&amp;fluidsynth" border="0" width="230"> </a> <br>
+    <a href="http://store.ovi.com/content/132667"> <img
+        src="images/-nokia-n8-4.jpg" alt="OVI Store banner" name="OVI
+        Store banner"> </a> <br>
+    <a
+href="http://www.softpedia.com/get/Others/Home-Education/Virtual-Piano-Keyboard.shtml">
+      <img
+        src="http://www.softpedia.com/base_img/softpedia_free_award_f.gif"
+        border="0"> </a>
