@@ -468,7 +468,7 @@ Knob widget</li>
 
         <h4>Project Links</h4>
 
-        <!--#include file="rightlinks.shtml"-->        
+<!--#include file="rightlinks.shtml"-->
         
         <br/>
 
