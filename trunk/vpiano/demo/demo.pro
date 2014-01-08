@@ -1,23 +1,29 @@
+#-------------------------------------------------
+#
+# Project created by QtCreator 2014-01-02T16:48:15
+#
+#-------------------------------------------------
+
+QT       += core gui
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+TARGET = demo
 TEMPLATE = app
-TARGET = vpianodemo
-QT += core \
-    gui
-HEADERS += vpiano.h
-SOURCES += main.cpp \
-    vpiano.cpp
+
 INCLUDEPATH += ../plugin
 LIBS += -L../plugin \
     -lvpianokeybd
-CONFIG += release
-linux* {
-    CONFIG += x11
-}
-win32 { 
-    CONFIG -= debug
-    CONFIG -= debug_and_release
-    CONFIG += console
-}
+
 macx {
-    LIBS += -framework Carbon
+    LIBS += -framework Cocoa
 }
-FORMS += demo.ui
+
+SOURCES += main.cpp\
+        mainwindow.cpp \
+    editkey.cpp
+
+HEADERS  += mainwindow.h \
+    editkey.h
+
+FORMS    += mainwindow.ui

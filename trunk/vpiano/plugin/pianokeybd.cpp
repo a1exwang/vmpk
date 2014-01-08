@@ -1,6 +1,7 @@
 /*
-    Virtual Piano Widget for Qt4 
-    Copyright (C) 2008-2013, Pedro Lopez-Cabanillas <plcl@users.sf.net>
+    MIDI Virtual Piano Keyboard
+    Copyright (C) 2008-2014, Pedro Lopez-Cabanillas <plcl@users.sf.net>
+    Copyright (C) 2014,      Davy Triponney         <davy.triponney@gmail.com>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -12,43 +13,46 @@
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License along 
+    You should have received a copy of the GNU General Public License along
     with this program; If not, see <http://www.gnu.org/licenses/>.
 */
 
 #include "pianokeybd.h"
+#include "pianoscene.h"
+#include "keyboardmap.h"
 
-PianoKeybd::PianoKeybd(QWidget *parent) 
-    : QGraphicsView(parent), m_rotation(0), m_scene(NULL), m_rawMap(NULL)
+
+PianoKeybd::PianoKeybd(QWidget *parent, const int startKey, const int numKeys) : QGraphicsView(parent),
+      m_rotation(0),
+      m_scene(NULL),
+      m_keyboardMap(new KeyboardMap())
 {
     initialize();
-    initScene(3, 5);
-}
-
-PianoKeybd::PianoKeybd(const int baseOctave, const int numOctaves, QWidget *parent) 
-    : QGraphicsView(parent), m_rotation(0), m_scene(NULL), m_rawMap(NULL)
-{
-    initialize();
-    initScene(baseOctave, numOctaves);
+    PianoScene::initKeyboardMap(m_keyboardMap);
+    initScene(startKey, numKeys);
 }
 
 PianoKeybd::~PianoKeybd()
 {
-    setRawKeyboardMode(false);
-    setRawKeyboardMap(NULL);
+    m_scene->setRawKeyboardMode(false);
+    delete m_scene;
+    delete m_keyboardMap;
 }
 
-void PianoKeybd::initScene(int base, int num, const QColor& c)
+void PianoKeybd::initScene(int startKey, int numKeys)
 {
-    m_scene = new PianoScene(base, num, c, this);
-    m_scene->setKeyboardMap(&m_defaultMap);
-    connect(m_scene, SIGNAL(noteOn(int)), SIGNAL(noteOn(int)));
+    PianoScene * oldScene = m_scene;
+    m_scene = new PianoScene(startKey, numKeys, oldScene, this);
+    delete oldScene;
+    connect(m_scene, SIGNAL(noteOn(int,int)), SIGNAL(noteOn(int,int)));
     connect(m_scene, SIGNAL(noteOff(int)), SIGNAL(noteOff(int)));
+    connect(m_scene, SIGNAL(mouseOver(int)), SIGNAL(mouseOver(int)));
     setScene(m_scene);
 }
 
 void PianoKeybd::initialize()
 {
+    setAttribute(Qt::WA_AcceptTouchEvents);
     setAttribute(Qt::WA_InputMethodEnabled, false);
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -58,12 +62,7 @@ void PianoKeybd::initialize()
     setOptimizationFlag(DontClipPainter, true);
     setOptimizationFlag(DontSavePainterState, true);
     setOptimizationFlag(DontAdjustForAntialiasing, true);
-    setBackgroundBrush(QApplication::palette().background());
-    initDefaultMap();
-    RawKeybdApp* rapp = dynamic_cast<RawKeybdApp*>(qApp);
-    if (rapp != NULL) {
-        rapp->setRawKbdHandler(this);
-    }
+    this->setStyleSheet("background-color: transparent;");
 }
 
 void PianoKeybd::resizeEvent(QResizeEvent *event)
@@ -72,199 +71,179 @@ void PianoKeybd::resizeEvent(QResizeEvent *event)
     fitInView(m_scene->sceneRect(), Qt::KeepAspectRatio);
 }
 
-void PianoKeybd::showNoteOn(int midiNote, int vel)
+void PianoKeybd::set(KeyboardProperty keyboardProperty, QVariant value)
 {
-    m_scene->showNoteOn(midiNote, vel);
-}
-
-void PianoKeybd::showNoteOff(int midiNote, int vel)
-{
-    m_scene->showNoteOff(midiNote, vel);
-}
-
-void PianoKeybd::initDefaultMap()
-{
-    // Default translated Keyboard Map
-    m_defaultMap.insert(Qt::Key_Z, 12);
-    m_defaultMap.insert(Qt::Key_S, 13);
-    m_defaultMap.insert(Qt::Key_X, 14);
-    m_defaultMap.insert(Qt::Key_D, 15);
-    m_defaultMap.insert(Qt::Key_C, 16);
-    m_defaultMap.insert(Qt::Key_V, 17);
-    m_defaultMap.insert(Qt::Key_G, 18);
-    m_defaultMap.insert(Qt::Key_B, 19);
-    m_defaultMap.insert(Qt::Key_H, 20);
-    m_defaultMap.insert(Qt::Key_N, 21);
-    m_defaultMap.insert(Qt::Key_J, 22);
-    m_defaultMap.insert(Qt::Key_M, 23);
-    m_defaultMap.insert(Qt::Key_Q, 24);
-    m_defaultMap.insert(Qt::Key_2, 25);
-    m_defaultMap.insert(Qt::Key_W, 26);
-    m_defaultMap.insert(Qt::Key_3, 27);
-    m_defaultMap.insert(Qt::Key_E, 28);
-    m_defaultMap.insert(Qt::Key_R, 29);
-    m_defaultMap.insert(Qt::Key_5, 30);
-    m_defaultMap.insert(Qt::Key_T, 31);
-    m_defaultMap.insert(Qt::Key_6, 32);
-    m_defaultMap.insert(Qt::Key_Y, 33);
-    m_defaultMap.insert(Qt::Key_7, 34);
-    m_defaultMap.insert(Qt::Key_U, 35);
-    m_defaultMap.insert(Qt::Key_I, 36);
-    m_defaultMap.insert(Qt::Key_9, 37);
-    m_defaultMap.insert(Qt::Key_O, 38);
-    m_defaultMap.insert(Qt::Key_0, 39);
-    m_defaultMap.insert(Qt::Key_P, 40);
-
-    // Default Raw Keyboard Map
-#if defined(Q_WS_X11)
-    m_defaultRawMap.insert(94, 11);
-    m_defaultRawMap.insert(52, 12);
-    m_defaultRawMap.insert(39, 13);
-    m_defaultRawMap.insert(53, 14);
-    m_defaultRawMap.insert(40, 15);
-    m_defaultRawMap.insert(54, 16);
-    m_defaultRawMap.insert(55, 17);
-    m_defaultRawMap.insert(42, 18);
-    m_defaultRawMap.insert(56, 19);
-    m_defaultRawMap.insert(43, 20);
-    m_defaultRawMap.insert(57, 21);
-    m_defaultRawMap.insert(44, 22);
-    m_defaultRawMap.insert(58, 23);
-    m_defaultRawMap.insert(59, 24);
-    m_defaultRawMap.insert(46, 25);
-    m_defaultRawMap.insert(60, 26);
-    m_defaultRawMap.insert(47, 27);
-    m_defaultRawMap.insert(61, 28);
-
-    m_defaultRawMap.insert(24, 29);
-    m_defaultRawMap.insert(11, 30);
-    m_defaultRawMap.insert(25, 31);
-    m_defaultRawMap.insert(12, 32);
-    m_defaultRawMap.insert(26, 33);
-    m_defaultRawMap.insert(13, 34);
-    m_defaultRawMap.insert(27, 35);
-    m_defaultRawMap.insert(28, 36);
-    m_defaultRawMap.insert(15, 37);
-    m_defaultRawMap.insert(29, 38);
-    m_defaultRawMap.insert(16, 39);
-    m_defaultRawMap.insert(30, 40);
-    m_defaultRawMap.insert(31, 41);
-    m_defaultRawMap.insert(18, 42);
-    m_defaultRawMap.insert(32, 43);
-    m_defaultRawMap.insert(19, 44);
-    m_defaultRawMap.insert(33, 45);
-    m_defaultRawMap.insert(20, 46);
-    m_defaultRawMap.insert(34, 47);
-    m_defaultRawMap.insert(35, 48);
-#endif
-
-#if defined(Q_WS_WIN)
-    m_defaultRawMap.insert(86, 11);
-    m_defaultRawMap.insert(44, 12);
-    m_defaultRawMap.insert(31, 13);
-    m_defaultRawMap.insert(45, 14);
-    m_defaultRawMap.insert(32, 15);
-    m_defaultRawMap.insert(46, 16);
-    m_defaultRawMap.insert(47, 17);
-    m_defaultRawMap.insert(34, 18);
-    m_defaultRawMap.insert(48, 19);
-    m_defaultRawMap.insert(35, 20);
-    m_defaultRawMap.insert(49, 21);
-    m_defaultRawMap.insert(36, 22);
-    m_defaultRawMap.insert(50, 23);
-    m_defaultRawMap.insert(51, 24);
-    m_defaultRawMap.insert(38, 25);
-    m_defaultRawMap.insert(52, 26);
-    m_defaultRawMap.insert(39, 27);
-    m_defaultRawMap.insert(53, 28);
-
-    m_defaultRawMap.insert(16, 29);
-    m_defaultRawMap.insert(3, 30);
-    m_defaultRawMap.insert(17, 31);
-    m_defaultRawMap.insert(4, 32);
-    m_defaultRawMap.insert(18, 33);
-    m_defaultRawMap.insert(5, 34);
-    m_defaultRawMap.insert(19, 35);
-    m_defaultRawMap.insert(20, 36);
-    m_defaultRawMap.insert(7, 37);
-    m_defaultRawMap.insert(21, 38);
-    m_defaultRawMap.insert(8, 39);
-    m_defaultRawMap.insert(22, 40);
-    m_defaultRawMap.insert(23, 41);
-    m_defaultRawMap.insert(10, 42);
-    m_defaultRawMap.insert(24, 43);
-    m_defaultRawMap.insert(11, 44);
-    m_defaultRawMap.insert(25, 45);
-    m_defaultRawMap.insert(12, 46);
-    m_defaultRawMap.insert(26, 47);
-    m_defaultRawMap.insert(27, 48);
-#endif
-
-#if defined(Q_WS_MAC)
-    m_defaultRawMap.insert(50, 11);
-    m_defaultRawMap.insert(6, 12);
-    m_defaultRawMap.insert(1, 13);
-    m_defaultRawMap.insert(7, 14);
-    m_defaultRawMap.insert(2, 15);
-    m_defaultRawMap.insert(8, 16);
-    m_defaultRawMap.insert(9, 17);
-    m_defaultRawMap.insert(5, 18);
-    m_defaultRawMap.insert(11, 19);
-    m_defaultRawMap.insert(4, 20);
-    m_defaultRawMap.insert(45, 21);
-    m_defaultRawMap.insert(38, 22);
-    m_defaultRawMap.insert(46, 23);
-    m_defaultRawMap.insert(43, 24);
-    m_defaultRawMap.insert(37, 25);
-    m_defaultRawMap.insert(47, 26);
-    m_defaultRawMap.insert(41, 27);
-    m_defaultRawMap.insert(44, 28);
-
-    m_defaultRawMap.insert(12, 29);
-    m_defaultRawMap.insert(19, 30);
-    m_defaultRawMap.insert(13, 31);
-    m_defaultRawMap.insert(20, 32);
-    m_defaultRawMap.insert(14, 33);
-    m_defaultRawMap.insert(21, 34);
-    m_defaultRawMap.insert(15, 35);
-    m_defaultRawMap.insert(17, 36);
-    m_defaultRawMap.insert(22, 37);
-    m_defaultRawMap.insert(16, 38);
-    m_defaultRawMap.insert(26, 39);
-    m_defaultRawMap.insert(32, 40);
-    m_defaultRawMap.insert(34, 41);
-    m_defaultRawMap.insert(25, 42);
-    m_defaultRawMap.insert(31, 43);
-    m_defaultRawMap.insert(29, 44);
-    m_defaultRawMap.insert(35, 45);
-    m_defaultRawMap.insert(27, 46);
-    m_defaultRawMap.insert(33, 47);
-    m_defaultRawMap.insert(30, 48);
-#endif
-    m_rawMap = &m_defaultRawMap;
-}
-
-void PianoKeybd::setNumOctaves(const int numOctaves)
-{
-    if (numOctaves != m_scene->numOctaves()) {
-        int baseOctave = m_scene->baseOctave();
-        QColor color = m_scene->getKeyPressedColor();
-        PianoHandler* handler = m_scene->getPianoHandler();
-        KeyboardMap* keyMap = m_scene->getKeyboardMap();
-        delete m_scene;
-        initScene(baseOctave, numOctaves, color);
-        m_scene->setPianoHandler(handler);
-        m_scene->setKeyboardMap(keyMap);
-        fitInView(m_scene->sceneRect(), Qt::KeepAspectRatio);
+    switch (keyboardProperty)
+    {
+    case PROPERTY_KEY_MIN:
+        setStartKey(value.toInt());
+        break;
+    case PROPERTY_KEY_NUMBER:
+        setNumKeys(value.toInt());
+        break;
+    case PROPERTY_COLORATION_TYPE:
+        m_scene->setColorationType((ColorationType)value.toInt());
+        break;
+    case PROPERTY_COLOR_TEXT_BLACK_KEYS: m_scene->setColor(-4, value.value<QColor>()); break;
+    case PROPERTY_COLOR_TEXT_WHITE_KEYS: m_scene->setColor(-3, value.value<QColor>()); break;
+    case PROPERTY_COLOR_BLACK_KEYS: m_scene->setColor(-2, value.value<QColor>()); break;
+    case PROPERTY_COLOR_WHITE_KEYS: m_scene->setColor(-1, value.value<QColor>()); break;
+    case PROPERTY_COLOR_1:          m_scene->setColor(0,  value.value<QColor>()); break;
+    case PROPERTY_COLOR_2:          m_scene->setColor(1,  value.value<QColor>()); break;
+    case PROPERTY_COLOR_3:          m_scene->setColor(2,  value.value<QColor>()); break;
+    case PROPERTY_COLOR_4:          m_scene->setColor(3,  value.value<QColor>()); break;
+    case PROPERTY_COLOR_5:          m_scene->setColor(4,  value.value<QColor>()); break;
+    case PROPERTY_COLOR_6:          m_scene->setColor(5,  value.value<QColor>()); break;
+    case PROPERTY_COLOR_7:          m_scene->setColor(6,  value.value<QColor>()); break;
+    case PROPERTY_COLOR_8:          m_scene->setColor(7,  value.value<QColor>()); break;
+    case PROPERTY_COLOR_9:          m_scene->setColor(8,  value.value<QColor>()); break;
+    case PROPERTY_COLOR_10:         m_scene->setColor(9,  value.value<QColor>()); break;
+    case PROPERTY_COLOR_11:         m_scene->setColor(10, value.value<QColor>()); break;
+    case PROPERTY_COLOR_12:         m_scene->setColor(11, value.value<QColor>()); break;
+    case PROPERTY_COLOR_13:         m_scene->setColor(12, value.value<QColor>()); break;
+    case PROPERTY_COLOR_14:         m_scene->setColor(13, value.value<QColor>()); break;
+    case PROPERTY_COLOR_15:         m_scene->setColor(14, value.value<QColor>()); break;
+    case PROPERTY_COLOR_16:         m_scene->setColor(15, value.value<QColor>()); break;
+    case PROPERTY_ROTATION:
+        setRotation(value.toInt());
+        break;
+    case PROPERTY_TRANSPOSE:
+        m_scene->setTranspose(value.toInt());
+        break;
+    case PROPERTY_CHANNEL:
+        m_scene->setChannel(value.toInt());
+        break;
+    case PROPERTY_VELOCITY:
+        m_scene->setVelocity(value.toInt());
+        break;
+    case PROPERTY_ENABLE_COMPUTER_KEYBOARD:
+        m_scene->setKeyboardEnabled(value.toBool());
+        break;
+    case PROPERTY_ENABLE_MOUSE:
+        m_scene->setMouseEnabled(value.toBool());
+        break;
+    case PROPERTY_ENABLE_TOUCH:
+        m_scene->setTouchEnabled(value.toBool());
+        break;
+    case PROPERTY_LABEL_TYPE:
+        m_scene->setLabelType((LabelType)value.toInt());
+        break;
+    case PROPERTY_MIDDLE_C:
+        m_scene->setMiddleC((MiddleKey)value.toInt());
+        break;
+    case PROPERTY_CUSTOM_LABELS:
+        m_scene->setCustomNoteNames(value.toStringList());
+        break;
+    case PROPERTY_LABEL_OCTAVE_INDICE:
+        m_scene->setIndicesInLabels(value.toBool());
+        break;
+    case PROPERTY_MAPPING_FIRST_NOTE:
+        m_keyboardMap->setFirstNote(value.toInt());
+        if (m_scene->getLabelType() == LABEL_TYPE_MAPPING)
+            m_scene->refreshLabels();
+        break;
     }
+}
+
+QVariant PianoKeybd::get(KeyboardProperty keyboardProperty)
+{
+    QVariant vRet;
+    switch (keyboardProperty)
+    {
+    case PROPERTY_KEY_MIN:
+        vRet = m_scene->startKey();
+        break;
+    case PROPERTY_KEY_NUMBER:
+        vRet = m_scene->numKeys();
+        break;
+    case PROPERTY_COLORATION_TYPE:
+        vRet = (int)m_scene->getColorationType();
+        break;
+    case PROPERTY_COLOR_TEXT_BLACK_KEYS: vRet = m_scene->getColor(-4); break;
+    case PROPERTY_COLOR_TEXT_WHITE_KEYS: vRet = m_scene->getColor(-3); break;
+    case PROPERTY_COLOR_BLACK_KEYS: vRet = m_scene->getColor(-2); break;
+    case PROPERTY_COLOR_WHITE_KEYS: vRet = m_scene->getColor(-1); break;
+    case PROPERTY_COLOR_1:          vRet = m_scene->getColor(0);  break;
+    case PROPERTY_COLOR_2:          vRet = m_scene->getColor(1);  break;
+    case PROPERTY_COLOR_3:          vRet = m_scene->getColor(2);  break;
+    case PROPERTY_COLOR_4:          vRet = m_scene->getColor(3);  break;
+    case PROPERTY_COLOR_5:          vRet = m_scene->getColor(4);  break;
+    case PROPERTY_COLOR_6:          vRet = m_scene->getColor(5);  break;
+    case PROPERTY_COLOR_7:          vRet = m_scene->getColor(6);  break;
+    case PROPERTY_COLOR_8:          vRet = m_scene->getColor(7);  break;
+    case PROPERTY_COLOR_9:          vRet = m_scene->getColor(8);  break;
+    case PROPERTY_COLOR_10:         vRet = m_scene->getColor(9);  break;
+    case PROPERTY_COLOR_11:         vRet = m_scene->getColor(10); break;
+    case PROPERTY_COLOR_12:         vRet = m_scene->getColor(11); break;
+    case PROPERTY_COLOR_13:         vRet = m_scene->getColor(12); break;
+    case PROPERTY_COLOR_14:         vRet = m_scene->getColor(13); break;
+    case PROPERTY_COLOR_15:         vRet = m_scene->getColor(14); break;
+    case PROPERTY_COLOR_16:         vRet = m_scene->getColor(15); break;
+    case PROPERTY_ROTATION:
+        vRet = m_rotation;
+        break;
+    case PROPERTY_TRANSPOSE:
+        vRet = m_scene->getTranspose();
+        break;
+    case PROPERTY_CHANNEL:
+        vRet = m_scene->getChannel();
+        break;
+    case PROPERTY_VELOCITY:
+        vRet = m_scene->getVelocity();
+        break;
+    case PROPERTY_ENABLE_COMPUTER_KEYBOARD:
+        vRet = m_scene->isKeyboardEnabled();
+        break;
+    case PROPERTY_ENABLE_MOUSE:
+        vRet = m_scene->isMouseEnabled();
+        break;
+    case PROPERTY_ENABLE_TOUCH:
+        vRet = m_scene->isTouchEnabled();
+        break;
+    case PROPERTY_LABEL_TYPE:
+        vRet = (int)m_scene->getLabelType();
+        break;
+    case PROPERTY_MIDDLE_C:
+        vRet = (int)m_scene->getMiddleC();
+        break;
+    case PROPERTY_CUSTOM_LABELS:
+        vRet = m_scene->customNoteNames();
+        break;
+    case PROPERTY_LABEL_OCTAVE_INDICE:
+        vRet = m_scene->indicesInLabels();
+        break;
+    case PROPERTY_MAPPING_FIRST_NOTE:
+        vRet = m_keyboardMap->getFirstNote();
+        break;
+    }
+    return vRet;
 }
 
 void PianoKeybd::setRotation(int r)
 {
-    if (r != m_rotation) {
+    if (r != m_rotation)
+    {
         m_rotation = r;
         resetTransform();
         rotate(m_rotation);
+        fitInView(m_scene->sceneRect(), Qt::KeepAspectRatio);
+    }
+}
+
+void PianoKeybd::setStartKey(int startKey)
+{
+    if ( startKey != m_scene->startKey() )
+    {
+        initScene(startKey, m_scene->numKeys());
+        fitInView(m_scene->sceneRect(), Qt::KeepAspectRatio);
+    }
+}
+
+void PianoKeybd::setNumKeys(int numKeys)
+{
+    if (numKeys != m_scene->numKeys())
+    {
+        initScene(m_scene->startKey(), numKeys);
         fitInView(m_scene->sceneRect(), Qt::KeepAspectRatio);
     }
 }
@@ -274,20 +253,47 @@ QSize PianoKeybd::sizeHint() const
     return mapFromScene(sceneRect()).boundingRect().size();
 }
 
-bool PianoKeybd::handleKeyPressed(int keycode)
+void PianoKeybd::customize(int key, CustomizationType type, QVariant value)
 {
-    if (m_rawMap != NULL && m_rawMap->contains(keycode)) {
-        m_scene->keyOn(m_rawMap->value(keycode));
-        return true;
+    switch (type)
+    {
+    case CUSTOMIZATION_TYPE_COLOR:
+        m_scene->addCustomColor(key, value.value<QColor>());
+        break;
+    case CUSTOMIZATION_TYPE_MARKER:
+        m_scene->addMarker(key, (MarkerType)value.toInt());
+        break;
     }
-    return false;
 }
 
-bool PianoKeybd::handleKeyReleased(int keycode)
+void PianoKeybd::resetCustomization(int key, CustomizationType type)
 {
-    if (m_rawMap != NULL && m_rawMap->contains(keycode)) {
-        m_scene->keyOff(m_rawMap->value(keycode));
-        return true;
-    }
-    return false;
+    m_scene->resetCustomization(key, type);
+}
+
+void PianoKeybd::clearCustomization()
+{
+    m_scene->clearCustomization();
+}
+
+void PianoKeybd::inputNoteOn(int midiNote, int vel, int channel)
+{
+    m_scene->showNoteOn(midiNote, vel, channel);
+}
+
+void PianoKeybd::inputNoteOff(int midiNote, int channel)
+{
+    m_scene->showNoteOff(midiNote, channel);
+}
+
+void PianoKeybd::setMapping(Key key, int numOctave, QKeySequence sequence)
+{
+    m_keyboardMap->setMapping(key, numOctave, sequence);
+    if (m_scene->getLabelType() == LABEL_TYPE_MAPPING)
+        m_scene->refreshLabels();
+}
+
+QKeySequence PianoKeybd::getMapping(Key key, int numOctave)
+{
+    return m_keyboardMap->getMapping(key, numOctave);
 }

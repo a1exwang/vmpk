@@ -1,6 +1,6 @@
 /*
-    Virtual Piano Widget for Qt4
-    Copyright (C) 2008-2013, Pedro Lopez-Cabanillas <plcl@users.sf.net>
+    MIDI Virtual Piano Keyboard
+    Copyright (C) 2014,      Davy Triponney         <davy.triponney@gmail.com>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -16,13 +16,14 @@
     with this program; If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "vpiano.h"
-#include "rawkeybdapp.h"
+#include <QApplication>
+#include "mainwindow.h"
 
 int main(int argc, char *argv[])
 {
-    RawKeybdApp a(argc, argv);
-    VPiano w;
+    QApplication a(argc, argv);
+    MainWindow w;
     w.show();
+    
     return a.exec();
 }
