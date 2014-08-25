@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
     <meta name="description" content="virtual midi piano keyboard" /> 
     <meta name="keywords" content="virtual midi piano keyboard" /> 
-    <meta name="copyright" content="&copy; 2008-2013 Pedro Lopez-Cabanillas" /> 
+    <meta name="copyright" content="&copy; 2008-2014 Pedro Lopez-Cabanillas" /> 
     <title>VMPK. Virtual MIDI Piano Keyboard</title> 
     <!-- lightbox2: href="http://www.lokeshdhakar.com/projects/lightbox2/ --> 
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" /> 
@@ -13,6 +13,7 @@
     <script src="js/lightbox.js" type="text/javascript"></script> 
     <!-- Wordsworth 3: http://leebaillie.com/free-css-template-wordsworth-3/ --> 
     <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" /> 
+    <script src="https://apis.google.com/js/platform.js" async defer>{lang: 'fr'}</script>
 </head> 
  
 <body> 
@@ -96,7 +97,7 @@ Ce format a été développé par Cakewalk et est utilisé par Sonar.</p>
 des fonctionnalités à venir. N'hésitez pas à contacter l'auteur pour poser des questions, rapporter des bugs ou proposer de nouvelles fonctionnalités. 
 Vous pouvez utiliser le tracker sur le site du project 
 <a href="http://sourceforge.net/tracker2/?group_id=236429">SourceForge</a>.</p> 
-<p>Copyright (C) 2008-2013, Pedro Lopez-Cabanillas <b>&lt;plcl AT
+<p>Copyright (C) 2008-2014, Pedro Lopez-Cabanillas <b>&lt;plcl AT
 users.sourceforge.net&gt; </b></p> 
 <p>Virtual MIDI Piano Keyboard est un logiciel libre sous
 <a href="http://www.gnu.org/copyleft/gpl.html">licence GPL v3</a>.</p> 
@@ -497,13 +498,10 @@ Knob widget</li>
     </div><!-- RIGHT-COLUMN DIV ENDS --> 
  
     <div id="footer"> 
-        <p class="left">&copy; 2008-2013 Pedro Lopez-Cabanillas.</p> 
+        <p class="left">&copy; 2008-2014 Pedro Lopez-Cabanillas.</p> 
         <p class="right"><a href="index.fr.shtml">Haut de page</a></p> 
     </div> 
  
 </div> 
- 
-<!--#include file="piwik.shtml" -->
- 
 </body> 
 </html> 
