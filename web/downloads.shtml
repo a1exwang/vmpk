@@ -12,16 +12,12 @@
     <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.5.1/vmpk-0.5.1.tar.bz2">vmpk-0.5.1.tar.bz2</a> (375 kB)</li>
 <li style="list-style-image: url('images/linux.png');"> Linux packages:
 <ul>
-  <li><a class="external" href="http://packages.debian.org/vmpk">Debian</a></li>
-  <li><a class="external" href="http://launchpad.net/ubuntu/+source/vmpk">Ubuntu</a></li>
+  <li><a class="external" href="http://software.opensuse.org/package/vmpk">openSUSE</a></li>
+  <li><a class="external" href="http://www.archlinux.org/packages/?q=vmpk">Arch Linux</a></li>
   <li><a class="external" href="http://packages.gentoo.org/package/media-sound/vmpk">Gentoo</a></li>
-  <li><a class="external" href="https://admin.fedoraproject.org/pkgdb/applications/Vmpk">Fedora</a></li>
-  <li><a class="external" href="http://aur.archlinux.org/packages.php?ID=20321">Arch Linux (Aur)</a></li>
-  <!--<li><a class="external" href="http://tangostudio.tuxfamily.org">UbuntuStudio (Tango Studio)</a></li>-->
-  <!--<li><a class="external" href="http://www.pardus.org.tr/eng/">Pardus</a></li>-->
-  <!--<li><a class="external" href="http://packages.zenwalk.org/?q=vmpk&amp;zversion=all">Zenwalk</a></li>-->
-  <!--li><a class="external" href="http://software.opensuse.org/search?baseproject=ALL&amp;p=1&amp;q=vmpk">openSUSE</a>, from the openSUSE Build Service</li -->
-  <!--<li><a class="external" href="http://doc4.mandriva.org/bin/view/d4/component/vmpk?d=cooker">Mandriva</a></li>-->
+  <li><a class="external" href="http://apps.fedoraproject.org/packages/vmpk">Fedora</a> (outdated)</li>
+  <li><a class="external" href="http://packages.debian.org/vmpk">Debian</a> (outdated)</li>
+  <li><a class="external" href="http://apps.ubuntu.com/cat/applications/vmpk/">Ubuntu</a> (outdated)</li>
 </ul>
 </li>
 </ul>
