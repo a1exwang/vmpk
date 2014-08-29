@@ -100,10 +100,10 @@ in Sonar.</p>
 <p>This software is in a very early alpha stage. See the TODO file for a list of 
 pending features. Please feel free to contact the author to ask questions, 
 report bugs, and propose new features. You can use the tracking system at
-<a href="http://sourceforge.net/tracker2/?group_id=236429">SourceForge
+<a href="http://sourceforge.net/p/vmpk/_list/tickets">SourceForge
 project site</a>.</p>
 <p>Copyright (C) 2008-2014, Pedro Lopez-Cabanillas <b>&lt;plcl AT
-users.sourceforge.net&gt; </b></p>
+users.sourceforge.net&gt; </b> and others.</p>
 <p>Virtual MIDI Piano Keyboard is free software licensed under the terms of the
 <a href="http://www.gnu.org/copyleft/gpl.html">GPL v3 license</a>.</p>
 
@@ -238,9 +238,6 @@ virtual cables, but for digital audio data.</p>
 <h3>Some keys are silent</h3>
 <p>When you select channel 10 on a standard MIDI synth, it plays percussion sounds assigned to many keys but not to all of them. On melodic channels (not channel 10) you can select patches with a limited range of notes. This is known in music as  <a href="http://en.wikipedia.org/wiki/Tessitura">Tessitura</a>.</p>
 
-<h3>The "Grab Keyboard" option fails</h3>
-<p>It is a known issue for Linux users. This feature works well in KDE3/4 desktops using the standard kwin window manager; it also works with Enlightenment and Window Maker, but fails in Metacity and Compiz window managers, common among Gnome setups. It is also known that using this option prevents normal usage of the drop down menus on GTK2 applications. There is no known solution for this issue, except avoiding the broken scenarios if you really need this feature.</p>
-
 <h3>Patch names don't match the real sounds</h3>
 <p>You need to provide an .INS file describing exactly your synthesizer's sound set or soundfont. The included file (gmgsxg.ins) contains definitions for only standard GM, GS and XG instruments. If your MIDI synth doesn't match exactly any of them, you need to get another .INS file, or create it yourself.</p>
 
@@ -298,10 +295,10 @@ $ sudo make install
 
 <h3><a name="Requirements"></a>Requirements</h3>
 
-<p>In order to successfully build and use VMPK, you need Qt 4.4 or newer. 
+<p>In order to successfully build and use VMPK, you need Qt 5.1 or newer. 
 (install the -devel package for your system, or <a href="http://qt-project.org/downloads">download the open source edition</a> from qt-project.org</p>
 
-<p><a href="http://www.music.mcgill.ca/~gary/rtmidi/">RtMIDI</a> is included in the source package. It uses ALSA sequencer in Linux, 
+<p><a href="http://drumstick.sourceforge.net">Drusmtick RT</a> is required for all platforms. It uses ALSA sequencer in Linux, 
 WinMM in Windows and CoreMIDI in Mac OSX, which are the native MIDI systems in each supported platform.</p>
 
 <p>The build system is based on <a href="http://www.cmake.org">CMake</a>.</p>
@@ -403,9 +400,7 @@ open source projects. </p>
 <ul>
 <li>from <a href="http://qtractor.sourceforge.net">Qtractor</a>, by Rui Nuno Capela<br/>
 Instrument definition data classes</li>
-<li>from <a href="http://qsynth.sourceforge.net">QSynth</a>, by Rui Nuno Capela<br/>
-Knob widget</li>
-<li><a href="http://openclipart.org/media/files/TheresaKnott/346">Icon and logo</a> by Theresa Knott</li>
+<li><a href="http://openclipart.org/detail/366/piano-by-theresaknott">Icon and logo</a> by Theresa Knott</li>
 <li>This page uses the <a href="http://leebaillie.com/free-css-template-wordsworth-3/">Wordsworth 3</a> free template by Lee Baillie</li>
 <li>This page uses <a href="http://www.lokeshdhakar.com/projects/lightbox2/">Lightbox2</a> by Lokesh Dhakar</li>
 </ul>
