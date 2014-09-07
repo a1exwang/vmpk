@@ -1,3 +1,4 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -392,10 +393,10 @@ partes de los siguientes proyectos de código abierto.</p>
 
         <br><h4>Idiomas disponibles</h4>
         <ul class="vertical-navs">
-<li><a href="index.shtml" title="English"><span>&raquo;</span>English</a></li>
+        <li><a href="index.shtml" title="English"><span>&raquo;</span>English</a></li>
         <li><a href="index.es.shtml" title="español" class="current"><span>&raquo;</span>español</a></li>
-        <li><a href="index.fr.shtml" title="français"><span>&raquo;</span>Français</a></li>
-        <li><a href="index.ru.shtml" title="русский"><span>&raquo;</span>Русский</a></li>
+        <!--<li><a href="index.fr.shtml" title="français"><span>&raquo;</span>Français</a></li>
+        <li><a href="index.ru.shtml" title="русский"><span>&raquo;</span>Русский</a></li>-->
         </ul>
 <br><h4>Contenido</h4>
         <ul class="vertical-navs">
