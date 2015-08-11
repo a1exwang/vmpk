@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="virtual midi piano keyboard" />
     <meta name="keywords" content="virtual midi piano keyboard" />
-    <meta name="copyright" content="&copy; 2008-2014 Pedro Lopez-Cabanillas" />
+    <meta name="copyright" content="&copy; 2008-2015 Pedro Lopez-Cabanillas" />
     <title>VMPK. Virtual MIDI Piano Keyboard</title>
     <!-- lightbox2: href="http://www.lokeshdhakar.com/projects/lightbox2/ -->
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
@@ -14,10 +14,14 @@
     <!-- Wordsworth 3: http://leebaillie.com/free-css-template-wordsworth-3/ -->
     <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+    window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"dark-top"};
+    </script>
+    <script type="text/javascript" src="//s3.amazonaws.com/cc.silktide.com/cookieconsent.latest.min.js"></script>
+    <!-- End Cookie Consent plugin -->
 </head>
-
 <body>
-
 <div id="container">
     
     <div id="masthead">
@@ -97,12 +101,12 @@ for different standards and devices can be provided as .INS files, the same
 format used by QTractor and TSE3. It was developed by Cakewalk and used also 
 in Sonar.</p>
 
-<p>This software is in a very early alpha stage. See the TODO file for a list of 
+<p>This software is still in development. See the TODO file for a list of 
 pending features. Please feel free to contact the author to ask questions, 
 report bugs, and propose new features. You can use the tracking system at
 <a href="http://sourceforge.net/p/vmpk/_list/tickets">SourceForge
 project site</a>.</p>
-<p>Copyright (C) 2008-2014, Pedro Lopez-Cabanillas <b>&lt;plcl AT
+<p>Copyright (C) 2008-2015, Pedro Lopez-Cabanillas <b>&lt;plcl AT
 users.sourceforge.net&gt; </b> and others.</p>
 <p>Virtual MIDI Piano Keyboard is free software licensed under the terms of the
 <a href="http://www.gnu.org/copyleft/gpl.html">GPL v3 license</a>.</p>
@@ -453,8 +457,8 @@ Instrument definition data classes</li>
         <br/>
 
         <p class="green">
-        <script type="text/javascript" src="http://www.ohloh.net/p/16503/widgets/project_users_logo.js"></script>
-        You can support Virtual MIDI Piano Keyboard by adding it to your stack at Ohloh
+        <script type='text/javascript' src='http://www.openhub.net/p/VMPK/widgets/project_users_logo?format=js'></script>        
+        You can support Virtual MIDI Piano Keyboard by adding it to your stack at OpenHub
         </p>
 
         <br/>
@@ -518,7 +522,7 @@ Instrument definition data classes</li>
     </div><!-- RIGHT-COLUMN DIV ENDS -->
 
     <div id="footer">
-        <p class="left">&copy; 2008-2014 Pedro Lopez-Cabanillas.</p>
+        <p class="left">&copy; 2008-2015 Pedro Lopez-Cabanillas.</p>
         <p class="right"><a href="index.shtml">Top</a></p>
     </div>
 

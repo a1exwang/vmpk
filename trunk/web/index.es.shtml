@@ -1,17 +1,27 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="description" content="virtual midi piano keyboard">
-<meta name="keywords" content="virtual midi piano keyboard">
-<meta name="copyright" content="&amp;copy; 2008-2014 Pedro Lopez-Cabanillas">
-<title>VMPK. Virtual MIDI Piano Keyboard</title>
-<!-- lightbox2: href="http://www.lokeshdhakar.com/projects/lightbox2/ --><link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen">
-<script src="js/prototype.js" type="text/javascript"></script><script src="js/scriptaculous.js?load=effects,builder" type="text/javascript"></script><script src="js/lightbox.js" type="text/javascript"></script><!-- Wordsworth 3: http://leebaillie.com/free-css-template-wordsworth-3/ --><link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
-<script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="virtual midi piano keyboard">
+    <meta name="keywords" content="virtual midi piano keyboard">
+    <meta name="copyright" content="&amp;copy; 2008-2015 Pedro Lopez-Cabanillas">
+    <title>VMPK. Virtual MIDI Piano Keyboard</title>
+    <!-- lightbox2: href="http://www.lokeshdhakar.com/projects/lightbox2/ -->
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen">
+    <script src="js/prototype.js" type="text/javascript"></script>
+    <script src="js/scriptaculous.js?load=effects,builder" type="text/javascript"></script>
+    <script src="js/lightbox.js" type="text/javascript"></script>
+    <!-- Wordsworth 3: http://leebaillie.com/free-css-template-wordsworth-3/ -->
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+    window.cookieconsent_options = {"message":"Este sitio web usa cookies para asegurar su mejor experiencia de uso","dismiss":"¡Entendido!","learnMore":"Mas info","link":null,"theme":"dark-top"};
+    </script>
+    <script type="text/javascript" src="//s3.amazonaws.com/cc.silktide.com/cookieconsent.latest.min.js"></script>
+    <!-- End Cookie Consent plugin -->
 </head>
 <body>
-
 <div id="container">
     
     <div id="masthead">
@@ -85,12 +95,12 @@ Las definiciones para diferentes estándares y dispositivos pueden ser proporcio
 archivos .INS, el mismo formato  utilizado por QTractor y TSE3. Fue desarrollado por 
 Cakewalk y también se usa en Sonar.</p>
 
-<p>Este software está en una fase alfa temprana. El archivo TODO contiene una lista de 
+<p>Este software está todavía en desarrollo. El archivo TODO contiene una lista de 
 características pendientes. Por favor, no dudes en contactar con el autor para hacer
 preguntas, informar de fallos, y proponer nuevas funcionalidades. Puedes usar el 
 sistema de seguimiento en el 
 <a href="http://sourceforge.net/p/vmpk/_list/tickets">sitio del proyecto de SourceForge</a>.</p>
-<p>Copyright (C) 2008-2014, Pedro Lopez-Cabanillas <b>&lt; plcl AT
+<p>Copyright (C) 2008-2015, Pedro Lopez-Cabanillas <b>&lt; plcl AT
 users.sourceforge.net&gt; </b> y otros.</p>
 <p>Virtual MIDI Piano Keyboard es software libre bajo los términos de la 
 <a href="http://www.gnu.org/copyleft/gpl.html">licencia GPL v3</a>.</p>
@@ -421,8 +431,8 @@ partes de los siguientes proyectos de código abierto.</p>
         <li><a href="#Acknowledgements">Agradecimientos</a></li>
         </ul>
 <br><p class="green">
-        <script type="text/javascript" src="http://www.ohloh.net/p/16503/widgets/project_users_logo.js"></script>
-        You can support Virtual MIDI Piano Keyboard by adding it to your stack at Ohloh
+        <script type='text/javascript' src='http://www.openhub.net/p/VMPK/widgets/project_users_logo?format=js'></script>        
+        Puedes ayudar al proyecto Virtual MIDI Piano Keyboard añadiéndolo a tu perfil de OpenHub
         </p>
 
         <br><h4>Enlaces del proyecto</h4>
@@ -464,7 +474,7 @@ partes de los siguientes proyectos de código abierto.</p>
     </div><!-- RIGHT-COLUMN DIV ENDS -->
 
     <div id="footer">
-        <p class="left">&copy; 2008-2014 Pedro Lopez-Cabanillas.</p>
+        <p class="left">&copy; 2008-2015 Pedro Lopez-Cabanillas.</p>
         <p class="right"><a href="index.es.shtml">Subir</a></p>
     </div>
 
