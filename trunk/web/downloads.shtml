@@ -5,23 +5,23 @@
 <br>
 <ul style="font-size: 150%;">
   <li style="list-style-image: url('images/windows.png');"> Windows 32bit: 
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.6.1/vmpk-0.6.1-win32-setup.exe/download">vmpk-0.6.1-win32-setup.exe</a>
+    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.6.2/vmpk-0.6.2-win32-setup.exe/download">vmpk-0.6.2-win32-setup.exe</a>
     (34.8 MB)
   </li>
   <li style="list-style-image: url('images/mac.png');"> Mac OS X Intel 64bit: 
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.6.1/vmpk-0.6.1-mac-x64.dmg/download">vmpk-0.6.1-mac-x64.dmg</a> 
+    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.6.2/vmpk-0.6.2-mac-x64.dmg/download">vmpk-0.6.2-mac-x64.dmg</a> 
     (45.3 MB)
   </li>
   <li style="list-style-image: url('images/cpp.png');"> C++ Sources: 
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.6.1/vmpk-0.6.1.tar.bz2/download">vmpk-0.6.1.tar.bz2</a> 
+    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.6.2/vmpk-0.6.2a.tar.bz2/download">vmpk-0.6.2a.tar.bz2</a> 
     (466.2 kB)
   </li>
   <li style="list-style-image: url('images/linux.png');"> Linux i686 (32 bit):
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.6.1/vmpk-0.6.1-linux-32bit-installer.run/download">vmpk-0.6.1-linux-32bit-installer.run</a>
+    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.6.2/vmpk-0.6.2-linux-32bit-installer.run/download">vmpk-0.6.2-linux-32bit-installer.run</a>
     (47.7 MB)
   </li>
   <li style="list-style-image: url('images/linux.png');"> Linux (64 bit):
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.6.1/vmpk-0.6.1-linux-64bit-installer.run/download">vmpk-0.6.1-linux-64bit-installer.run</a>
+    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.6.2/vmpk-0.6.2-linux-64bit-installer.run/download">vmpk-0.6.2-linux-64bit-installer.run</a>
     (48.3 MB)
   </li>
   <!--<ul>
