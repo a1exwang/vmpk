@@ -524,7 +524,7 @@ $ cmake . -DCMAKE_INSTALL_PREFIX=/usr
     </div><!-- RIGHT-COLUMN DIV ENDS -->
     
     <div id="footer">
-        <p class="left">Ауторска права: 2008-2015 Педро Лопез Кабанилас.</p>
+        <p class="left">Ауторска права: 2008-2018 Педро Лопез Кабанилас.</p>
         <p class="right"><a href="index.sr.shtml">На врх странице</a></p>
     </div>
 
