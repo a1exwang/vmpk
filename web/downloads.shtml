@@ -4,32 +4,24 @@
 </a>
 <br>
 <ul style="font-size: 150%;">
+  <li style="list-style-image: url('images/windows.png');"> Windows 64bit: 
+    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.0/vmpk-0.7.0-win-x64-setup.exe/download">vmpk-0.7.0-win-x64-setup.exe</a>
+    (28 MB)
+  </li>
   <li style="list-style-image: url('images/windows.png');"> Windows 32bit: 
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.6.2/vmpk-0.6.2-win32-setup.exe/download">vmpk-0.6.2-win32-setup.exe</a>
-    (34.8 MB)
+    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.0/vmpk-0.7.0-win-x86-setup.exe/download">vmpk-0.7.0-win-x86-setup.exe</a>
+    (24 MB)
   </li>
-  <li style="list-style-image: url('images/mac.png');"> Mac OS X Intel 64bit: 
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.6.2/vmpk-0.6.2-mac-x64.dmg/download">vmpk-0.6.2-mac-x64.dmg</a> 
-    (45.3 MB)
-  </li>
-  <li style="list-style-image: url('images/cpp.png');"> C++ Sources: 
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.6.2/vmpk-0.6.2a.tar.bz2/download">vmpk-0.6.2a.tar.bz2</a> 
-    (466.2 kB)
-  </li>
-  <li style="list-style-image: url('images/linux.png');"> Linux i686 (32 bit):
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.6.2/vmpk-0.6.2-linux-32bit-installer.run/download">vmpk-0.6.2-linux-32bit-installer.run</a>
-    (47.7 MB)
+  <li style="list-style-image: url('images/mac.png');"> macOS X Intel 64bit: 
+    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.0/vmpk-0.7.0-mac-x64.dmg/download">vmpk-0.7.0-mac-x64.dmg</a> 
+    (12 MB)
   </li>
   <li style="list-style-image: url('images/linux.png');"> Linux (64 bit):
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.6.2/vmpk-0.6.2-linux-64bit-installer.run/download">vmpk-0.6.2-linux-64bit-installer.run</a>
-    (48.3 MB)
+    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.0/vmpk-0.7.0-linux-x86_64.AppImage/download">vmpk-0.7.0-linux-x86_64.AppImage</a>
+    (24 MB)
   </li>
-  <!--<ul>
-    <li><a class="external" href="http://software.opensuse.org/package/vmpk">openSUSE</a></li>
-    <li><a class="external" href="http://www.archlinux.org/packages/?q=vmpk">Arch Linux</a></li>
-    <li><a class="external" href="http://packages.gentoo.org/package/media-sound/vmpk">Gentoo</a></li>
-    <li><a class="external" href="http://apps.fedoraproject.org/packages/vmpk">Fedora</a> (outdated)</li>
-    <li><a class="external" href="http://packages.debian.org/vmpk">Debian</a> (outdated)</li>
-    <li><a class="external" href="http://apps.ubuntu.com/cat/applications/vmpk/">Ubuntu</a> (outdated)</li>
-  </ul>-->
+  <li style="list-style-image: url('images/cpp.png');"> C++ Sources: 
+    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.0/vmpk-0.7.0.tar.bz2/download">vmpk-0.7.0.tar.bz2</a> 
+    (460 KB)
+  </li>
 </ul>
