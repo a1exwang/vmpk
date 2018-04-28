@@ -2,7 +2,9 @@
   <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
   VMPK for Android (free)
 </a>
-<br>
+<br/>
+<a href="https://sourceforge.net/projects/vmpk/files/latest/download"><img alt="Download Virtual MIDI Piano Keyboard" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
+<br/>
 <ul style="font-size: 150%;">
   <li style="list-style-image: url('images/windows.png');"> Windows 64bit: 
     <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.0/vmpk-0.7.0-win-x64-setup.exe/download">vmpk-0.7.0-win-x64-setup.exe</a>
@@ -17,7 +19,7 @@
     (12 MB)
   </li>
   <li style="list-style-image: url('images/linux.png');"> Linux (64 bit):
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.0/vmpk-0.7.0-linux-x86_64.AppImage/download">vmpk-0.7.0-linux-x86_64.AppImage</a>
+    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.0/vmpk-0.7.0-2-linux-x86_64.AppImage/download">vmpk-0.7.0-2-linux-x86_64.AppImage</a>
     (24 MB)
   </li>
   <li style="list-style-image: url('images/cpp.png');"> C++ Sources: 
@@ -25,3 +27,4 @@
     (460 KB)
   </li>
 </ul>
+<a href="https://sourceforge.net/projects/vmpk/files/latest/download"><img alt="Download Virtual MIDI Piano Keyboard" src="https://img.shields.io/sourceforge/dt/vmpk.svg" ></a>
