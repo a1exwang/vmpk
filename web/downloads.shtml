@@ -7,7 +7,7 @@
 <br/>
 <ul style="font-size: 150%;">
   <li style="list-style-image: url('images/windows.png');"> Windows 64bit: 
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.0/vmpk-0.7.0-win-x64-setup.exe/download">vmpk-0.7.0-win-x64-setup.exe</a>
+    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.1/vmpk-0.7.1-win-x64-setup.exe/download">vmpk-0.7.1-win-x64-setup.exe</a>
     (28 MB)
   </li>
   <li style="list-style-image: url('images/windows.png');"> Windows 32bit: 
@@ -15,16 +15,16 @@
     (24 MB)
   </li>
   <li style="list-style-image: url('images/mac.png');"> macOS X Intel 64bit: 
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.0/vmpk-0.7.0-mac-x64.dmg/download">vmpk-0.7.0-mac-x64.dmg</a> 
-    (12 MB)
+    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.1/vmpk-0.7.1-mac-x64.dmg/download">vmpk-0.7.1-mac-x64.dmg</a> 
+    (10 MB)
   </li>
   <li style="list-style-image: url('images/linux.png');"> Linux (64 bit):
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.0/vmpk-0.7.0-2-linux-x86_64.AppImage/download">vmpk-0.7.0-2-linux-x86_64.AppImage</a>
+    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.1/vmpk-0.7.1-linux-x86_64.AppImage/download">vmpk-0.7.1-linux-x86_64.AppImage</a>
     (24 MB)
   </li>
   <li style="list-style-image: url('images/cpp.png');"> C++ Sources: 
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.0/vmpk-0.7.0.tar.bz2/download">vmpk-0.7.0.tar.bz2</a> 
-    (460 KB)
+    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.1/vmpk-0.7.1.tar.bz2/download">vmpk-0.7.1.tar.bz2</a> 
+    (493 KB)
   </li>
 </ul>
 <a href="https://sourceforge.net/projects/vmpk/files/latest/download"><img alt="Download Virtual MIDI Piano Keyboard" src="https://img.shields.io/sourceforge/dt/vmpk.svg" ></a>
