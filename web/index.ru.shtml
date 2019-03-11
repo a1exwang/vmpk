@@ -189,7 +189,7 @@ MIDI, чтобы услышать проигрываемые ноты. Я сов
 General MIDI, Roland GS и Yamaha XG. У этого файла очень простой формат,  и  вы
 можете  использовать  текстовый  редактор,  чтобы  просмотреть,  изменить его и
 создать новый. Вы можете найти библиотеку описаний инструментов на
-<a href="ftp://ftp.cakewalk.com/pub/InstrumentDefinitions/">ftp-сервере cakewalk</a>.</p>
+<a href="https://www.cakewalk.com/Support/Knowledge-Base/2007013272/Instrument-Definitions#Locate">ftp-сервере cakewalk</a>.</p>
 
 <p>Начиная с выпуска 0.2.5 вы также можете импортировать файлы Sound Font
 (в форматах  .SF2  или  DLS),  как  описания  инструментов,  используя  диалог,

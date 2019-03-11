@@ -167,7 +167,7 @@ directorio de datos de VMPK (típicamente "/usr/share/vmpk" en Linux, y "C:\Prog
 llamado "gmgsxg.ins", que contiene definiciones para los estándares General MIDI, Roland GS y Yamaha XG. 
 Es un formato muy simple, y puedes usar cualquier editor de textos para ver, cambiar y crear uno 
 nuevo. Puedes encontrar una biblioteca de definiciones de instrumentos en el 
-<a href="ftp://ftp.cakewalk.com/pub/InstrumentDefinitions/">servidor FTP de Cakewalk</a>.</p>
+<a href="https://www.cakewalk.com/Support/Knowledge-Base/2007013272/Instrument-Definitions#Locate">servidor FTP de Cakewalk</a>.</p>
 
 <p>Desde la release 0.2.5 también puedes importar archivos Sound Font (en formatos .SF2 y .DLS) como 
 definiciones de instrumentos, utilizando un diálogo disponible en el menú Archivo-&gt;Importar SoundFont.</p>

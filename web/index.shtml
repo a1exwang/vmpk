@@ -172,7 +172,7 @@ Linux, and "C:\Program Files\VMPK" in Windows) named "gmgsxg.ins", containing de
 for the General MIDI, Roland GS and Yamaha XG standards. It is a very simple format, and 
 you can use any text editor to look, change, and create a new one. You can find a library of 
 instruments definitions at the 
-<a href="ftp://ftp.cakewalk.com/pub/InstrumentDefinitions/">cakewalk ftp server</a>.</p>
+<a href="https://www.cakewalk.com/Support/Knowledge-Base/2007013272/Instrument-Definitions#Locate">cakewalk ftp server</a>.</p>
 
 <p>Since the release 0.2.5 you can also import Sound Font files (in .SF2 or DLS formats) as
 instruments definitions, using a dialog available at menu File->Import SoundFont.</p>

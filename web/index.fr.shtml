@@ -164,7 +164,7 @@ Un fichier de définitions est installé par défaut dans le répertoire data de
 Linux, et "C:\Program Files\VMPK" sous Windows) nommé "gmgsxg.ins", qui contient les définitions pour les standards 
 General MIDI, Roland GS et Yamaha XG. C'est un format très simple et vous pouvez utiliser un éditeur de texte, 
 pour éditer ou créer un nouveau fichier. Vous pouvez trouver une liste de définitions sur le  
-<a href="ftp://ftp.cakewalk.com/pub/InstrumentDefinitions/">serveur FTP cakewalk</a>.</p> 
+<a href="https://www.cakewalk.com/Support/Knowledge-Base/2007013272/Instrument-Definitions#Locate">serveur FTP cakewalk</a>.</p> 
  
 <p>Depuis la version 0.2.5, vous pouvez importer des fichiers Soundfont (au format .SF2 ou DLS) en tant que définition d'instruments, en utilisant le menu Fichier->Importer un SoundFont.</p> 
  
