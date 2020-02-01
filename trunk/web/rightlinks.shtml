@@ -1,12 +1,9 @@
     <ul class="vertical-navs">
-      <li><a href="http://midi-clorianos.blogspot.com">Blog</a></li>
-      <li><a href="http://www.openhub.net/p/VMPK">openhub.net</a></li>
-      <li><a href="http://freecode.com/projects/vmpk">freecode.com</a></li>
-      <li><a
-href="http://qt-apps.org/content/show.php?action=content&amp;content=88233">qt-apps.org</a>
-      </li>
+      <li><a href="https://midi-clorianos.blogspot.com/search/label/VMPK">Blog</a></li>
+      <li><a href="https://www.openhub.net/p/VMPK">openhub.net</a></li>
+      <li><a href="http://freshmeat.sourceforge.net/projects/vmpk">freshmeat</a></li>
       <li>
-          <a href="http://apps.linuxaudio.org/apps/all/vmpk">linuxaudio.org
+          <a href="https://wiki.linuxaudio.org/apps/all/vmpk">linuxaudio.org
           <br/>
           <img src="images/lao_compact_06_filled_w100.png"
             name="linuxaudio" alt="linuxaudio.org" border="0"></a> 
@@ -20,7 +17,7 @@ href="https://play.google.com/store/apps/details?id=net.sourceforge.vmpk">
     </a>
     <br/>
     <a
-href="http://www.softpedia.com/get/Others/Home-Education/Virtual-Piano-Keyboard.shtml">
+href="https://www.softpedia.com/get/Others/Home-Education/Virtual-Piano-Keyboard.shtml">
       <img
-        src="http://www.softpedia.com/base_img/softpedia_free_award_f.gif"
+        src="https://s1.softpedia-static.com/_img/sp100free.png"
         border="0"> </a>

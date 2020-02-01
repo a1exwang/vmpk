@@ -7,23 +7,23 @@
 <br/>
 <ul style="font-size: 150%;">
   <li style="list-style-image: url('images/windows.png');"> Windows 64bit: 
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.2/vmpk-0.7.2-win-x64-setup.exe/download">vmpk-0.7.2-win-x64-setup.exe</a>
+    <a class="external" href="https://sourceforge.net/projects/vmpk/files/vmpk/0.7.2/vmpk-0.7.2-win-x64-setup.exe/download">vmpk-0.7.2-win-x64-setup.exe</a>
     (29.3 MB)
   </li>
   <li style="list-style-image: url('images/windows.png');"> Windows 32bit: 
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.2/vmpk-0.7.2-win-x86-setup.exe/download">vmpk-0.7.2-win-x86-setup.exe</a>
+    <a class="external" href="https://sourceforge.net/projects/vmpk/files/vmpk/0.7.2/vmpk-0.7.2-win-x86-setup.exe/download">vmpk-0.7.2-win-x86-setup.exe</a>
     (25.8 MB)
   </li>
   <li style="list-style-image: url('images/mac.png');"> macOS X Intel 64bit: 
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.2/vmpk-0.7.2-mac-x64.dmg/download">vmpk-0.7.2-mac-x64.dmg</a> 
+    <a class="external" href="https://sourceforge.net/projects/vmpk/files/vmpk/0.7.2/vmpk-0.7.2-mac-x64.dmg/download">vmpk-0.7.2-mac-x64.dmg</a> 
     (11.2 MB)
   </li>
   <li style="list-style-image: url('images/linux.png');"> Linux (64 bit):
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.2/vmpk-0.7.2-linux-x86_64.AppImage/download">vmpk-0.7.2-linux-x86_64.AppImage</a>
+    <a class="external" href="https://sourceforge.net/projects/vmpk/files/vmpk/0.7.2/vmpk-0.7.2-linux-x86_64.AppImage/download">vmpk-0.7.2-linux-x86_64.AppImage</a>
     (25.5 MB)
   </li>
   <li style="list-style-image: url('images/cpp.png');"> C++ Sources: 
-    <a class="external" href="http://sourceforge.net/projects/vmpk/files/vmpk/0.7.2/vmpk-0.7.2.tar.bz2/download">vmpk-0.7.2.tar.bz2</a> 
+    <a class="external" href="https://sourceforge.net/projects/vmpk/files/vmpk/0.7.2/vmpk-0.7.2.tar.bz2/download">vmpk-0.7.2.tar.bz2</a> 
     (438 kB)
   </li>
 </ul>

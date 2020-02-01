@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="description" content="virtual midi piano keyboard">
     <meta name="keywords" content="virtual midi piano keyboard">
-    <meta name="copyright" content="&copy; 2008-2015 Pedro Lopez-Cabanillas">
+    <meta name="copyright" content="&copy; 2008-2020 Pedro Lopez-Cabanillas">
     <title>VMPK. Виртуальная MIDI Клавиатура-пианино</title>
     <!-- lightbox2: href="http://www.lokeshdhakar.com/projects/lightbox2/ -->
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen">
@@ -74,12 +74,7 @@
 MIDI файлов. Чтобы сделать это, соедините порт MIDI со входным портом VMPK.</p>
 
 <div class="in-text-image">
-<object width="425" height="344">
-<param name="movie" value="http://www.youtube.com/v/f_jlej7cnQA&amp;amp;hl=es&amp;amp;fs=1"></param>
-<param name="allowFullScreen" value="true"></param>
-<param name="allowscriptaccess" value="always"></param>
-<embed src="http://www.youtube.com/v/f_jlej7cnQA&amp;amp;hl=es&amp;amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
-</object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f_jlej7cnQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>Гимнопедия №1, Э. Сати (1866–1925), исполняется с помощью MuseScore и VMPK на Linux</p>
 </div>
 
@@ -567,7 +562,7 @@ open source проектов.</p>
     </div><!-- RIGHT-COLUMN DIV ENDS -->
     
     <div id="footer">
-        <p class="left">&copy; 2008-2019 Pedro Lopez-Cabanillas.</p>
+        <p class="left">&copy; 2008-2020 Pedro Lopez-Cabanillas.</p>
         <p class="right"><a href="index.ru.shtml">Наверх</a></p>
     </div>
 
