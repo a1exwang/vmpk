@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="description" content="virtual midi piano keyboard">
-    <meta name="keywords" content="virtual midi piano keyboard">
-    <meta name="copyright" content="&copy; 2008-2020 Pedro Lopez-Cabanillas">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="virtual midi piano keyboard"/>
+    <meta name="keywords" content="virtual midi piano keyboard"/>
+    <meta name="copyright" content="&copy; 2008-2020 Pedro Lopez-Cabanillas"/>
     <title>VMPK. Виртуальная MIDI Клавиатура-пианино</title>
     <!-- lightbox2: href="http://www.lokeshdhakar.com/projects/lightbox2/ -->
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen">
@@ -444,7 +444,7 @@ $ cmake . -DCMAKE_INSTALL_PREFIX=/usr
 open source проектов.</p>
 
 <ul>
-<li>из <a href="http://qtractor.sourceforge.net">Qtractor</a>, от Rui Nuno Capela<br>
+<li>из <a href="http://qtractor.sourceforge.net">Qtractor</a>, от Rui Nuno Capela<br/>
 Классы данных описаний инструментов</li>
 <li><a href="http://openclipart.org/detail/366/piano-by-theresaknott">Значок и логотип</a> нарисованы Терезой Кнотт</li>
 <li>Эта страница использует свободный шаблон <a href="http://leebaillie.com/free-css-template-wordsworth-3/">Wordsworth 3</a> от Lee Baillie</li>
@@ -509,7 +509,7 @@ open source проектов.</p>
 
 <!--#include file="rightlinks.shtml"-->
         
-        <br><h4>Связанные приложения (кроссплатформенные)</h4>
+        <br/><h4>Связанные приложения (кроссплатформенные)</h4>
         <ul class="vertical-navs">
         <li><a href="http://qsynth.sourceforge.net">QSynth</a></li>
         <li><a href="http://www.fluidsynth.org">FluidSynth</a></li>
