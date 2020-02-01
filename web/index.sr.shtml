@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="description" content="virtual midi piano keyboard">
     <meta name="keywords" content="virtual midi piano keyboard">
-    <meta name="copyright" content="&copy; 2008-2015 Pedro Lopez-Cabanillas">
+    <meta name="copyright" content="&copy; 2008-2020 Pedro Lopez-Cabanillas">
     <title>ПМК. Патворена МИДИ клавијатура</title>
     <!-- lightbox2: href="http://www.lokeshdhakar.com/projects/lightbox2/ -->
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen">
@@ -71,13 +71,7 @@
 порт другог програма или инструмента на МИДИ-улазни порт програма ПМК.</p>
 
 <div class="in-text-image">
-<object width="425" height="344">
-<param name="movie" value="http://www.youtube.com/v/f_jlej7cnQA&amp;amp;hl=es&amp;amp;fs=1"></param>
-<param name="allowFullScreen" value="true"></param>
-<param name="allowscriptaccess" value="always"></param>
-<embed src="http://www.youtube.com/v/f_jlej7cnQA&amp;amp;hl=es&amp;amp;fs=1" type="application/x-shockwave-flash" 
-allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
-</object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f_jlej7cnQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>Гимнопедија број 1 Ерика Сатија (1866-1925) изведена на ГНУ/Линкс систему уз употребу програма ПМК и Мјуз-Скор </p>
 </div>
 
@@ -524,7 +518,7 @@ $ cmake . -DCMAKE_INSTALL_PREFIX=/usr
     </div><!-- RIGHT-COLUMN DIV ENDS -->
     
     <div id="footer">
-        <p class="left">Ауторска права: 2008-2019 Педро Лопез Кабанилас.</p>
+        <p class="left">Ауторска права: 2008-2020 Педро Лопез Кабанилас.</p>
         <p class="right"><a href="index.sr.shtml">На врх странице</a></p>
     </div>
 
