@@ -1,18 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="description" content="virtual midi piano keyboard">
-    <meta name="keywords" content="virtual midi piano keyboard">
-    <meta name="copyright" content="&amp;copy; 2008-2020 Pedro Lopez-Cabanillas">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="virtual midi piano keyboard" />
+    <meta name="keywords" content="virtual midi piano keyboard" />
+    <meta name="copyright" content="&amp;copy; 2008-2020 Pedro Lopez-Cabanillas" />
     <title>VMPK. Virtual MIDI Piano Keyboard</title>
     <!-- lightbox2: href="http://www.lokeshdhakar.com/projects/lightbox2/ -->
-    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
     <script src="js/prototype.js" type="text/javascript"></script>
     <script src="js/scriptaculous.js?load=effects,builder" type="text/javascript"></script>
     <script src="js/lightbox.js" type="text/javascript"></script>
     <!-- Wordsworth 3: http://leebaillie.com/free-css-template-wordsworth-3/ -->
-    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
     <script src="https://apis.google.com/js/platform.js" async defer>{lang: 'es'}</script>
     <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
     <script type="text/javascript">
@@ -56,7 +56,7 @@
     <div id="content">
 
     <div class="in-text-image">
-<img src="images/vmpk_605x334.png" name="screenshot" alt="VMPK 0.3.0"><p>VMPK 0.3.0</p>
+<img src="images/vmpk_605x334.png" name="screenshot" alt="VMPK 0.3.0"/><p>VMPK 0.3.0</p>
     </div>
 
 <h2>
@@ -105,15 +105,15 @@ users.sourceforge.net&gt; </b> y otros.</p>
 
 <div class="in-text-image">
 <a href="images/vmpk-0.3.0-linux.png" title="VMPK en Linux" rel="lightbox[gallery]">
-   <img src="images/vmpk-0.3.0-linux.jpg" alt="VMPK en Linux" border="0"></a> 
+   <img src="images/vmpk-0.3.0-linux.jpg" alt="VMPK en Linux" border="0"/></a> 
 <a href="images/vmpk-0.3.0-mac.png" title="VMPK en Mac OSX" rel="lightbox[gallery]">
-   <img src="images/vmpk-0.3.0-mac.jpg" alt="VMPK en Mac OSX" border="0"></a> 
+   <img src="images/vmpk-0.3.0-mac.jpg" alt="VMPK en Mac OSX" border="0"/></a> 
 <a href="images/vmpk-0.3.0-win.png" title="VMPK en Windows" rel="lightbox[gallery]">
-   <img src="images/vmpk-0.3.0-win.jpg" alt="VMPK en Windows" border="0"></a> 
+   <img src="images/vmpk-0.3.0-win.jpg" alt="VMPK en Windows" border="0"/></a> 
 <a href="images/vmpk-0.3.0-linux-big.png" title="VMPK ampliado, en Linux" rel="lightbox[gallery]">
-   <img src="images/vmpk-0.3.0-linux-big.jpg" alt="VMPK ampliado, en Linux" border="0"></a>
+   <img src="images/vmpk-0.3.0-linux-big.jpg" alt="VMPK ampliado, en Linux" border="0"/></a>
 <a href="images/vmpk-0.3.0-win-big.png" title="VMPK ampliado, en Windows" rel="lightbox[gallery]">
-   <img src="images/vmpk-0.3.0-win-big.jpg" alt="VMPK ampliado, en Windows" border="0"></a><p>Galería de capturas de pantalla</p>
+   <img src="images/vmpk-0.3.0-win-big.jpg" alt="VMPK ampliado, en Windows" border="0"/></a><p>Galería de capturas de pantalla</p>
 </div>
 
 <h2>
@@ -218,7 +218,7 @@ proporciona cables de audio virtuales para conectar los puertos de la tarjeta de
 una forma similar a los cables MIDI virtuales, pero para datos de audio digital.</p>
 
 <div class="in-text-image">
-<img src="images/qjackctl-conn.png" name="qjackctl" alt="ventana de conextiones de qjackctl"><p>Conexiones de QJackCtl en Linux</p>
+<img src="images/qjackctl-conn.png" name="qjackctl" alt="ventana de conextiones de qjackctl"/><p>Conexiones de QJackCtl en Linux</p>
 </div>
 
 <h2>
@@ -382,7 +382,7 @@ $ cmake .</pre>
 partes de los siguientes proyectos de código abierto.</p>
 
 <ul>
-<li>de <a href="https://qtractor.sourceforge.io">Qtractor</a>, por Rui Nuno Capela<br>Clases de definición de instrumentos</li>
+<li>de <a href="https://qtractor.sourceforge.io">Qtractor</a>, por Rui Nuno Capela<br/>Clases de definición de instrumentos</li>
 <li>
 <a href="https://openclipart.org/detail/366/piano-by-theresaknott">Icono y logo</a> por Theresa Knott</li>
 <li>Esta página utiliza la plantilla gratuita <a href="http://leebaillie.com/free-css-template-wordsworth-3/">Wordsworth 3</a>  de Lee Baillie</li>
@@ -395,10 +395,10 @@ partes de los siguientes proyectos de código abierto.</p>
 
     <div id="right-column">
         <div class="in-text-image">
-            <img class="right" src="images/TheresaKnott_piano.png" alt="VMPK logo. Drawing by Theresa Knott" title="Logo de VMPK. Dibujado por Theresa Knott">
+            <img class="right" src="images/TheresaKnott_piano.png" alt="VMPK logo. Drawing by Theresa Knott" title="Logo de VMPK. Dibujado por Theresa Knott"/>
         </div>
 
-        <br><h4>Idiomas disponibles</h4>
+        <br/><h4>Idiomas disponibles</h4>
         <ul class="vertical-navs">
         <li><a href="index.shtml" title="English"><span>&raquo;</span>English</a></li>
         <li><a href="index.es.shtml" title="español" class="current"><span>&raquo;</span>español</a></li>
@@ -406,7 +406,7 @@ partes de los siguientes proyectos de código abierto.</p>
         <li><a href="index.ru.shtml" title="русский"><span>&raquo;</span>Русский</a></li>
         <li><a href="index.sr.shtml" title="српски"><span>&raquo;</span>Српски</a></li>
         </ul>
-<br><h4>Contenido</h4>
+<br/><h4>Contenido</h4>
         <ul class="vertical-navs">
 <li><a href="#Introduction">Introducción</a></li>
         <li>
@@ -428,42 +428,42 @@ partes de los siguientes proyectos de código abierto.</p>
 </li>
         <li><a href="#Acknowledgements">Agradecimientos</a></li>
         </ul>
-<br><p class="green">
+<br/><p class="green">
         <script type='text/javascript' src='http://www.openhub.net/p/VMPK/widgets/project_users_logo?format=js'></script>        
         Puedes ayudar al proyecto Virtual MIDI Piano Keyboard añadiéndolo a tu perfil de OpenHub
         </p>
 
-        <br><h4>Enlaces del proyecto</h4>
+        <br/><h4>Enlaces del proyecto</h4>
 
 <!--#include file="rightlinks.shtml"-->
         
-        <br><h4>Programas relacionados (multiplataforma)</h4>
+        <br/><h4>Programas relacionados (multiplataforma)</h4>
         <ul class="vertical-navs">
 <li><a href="https://qsynth.sourceforge.io">QSynth</a></li>
         <li><a href="http://www.fluidsynth.org">FluidSynth</a></li>
         </ul>
-<br><h4>Programas relacionados para Linux</h4>
+<br/><h4>Programas relacionados para Linux</h4>
         <ul class="vertical-navs">
 <li><a href="https://qjackctl.sourceforge.io">QjackCtl</a></li>
         <li><a href="https://kmidimon.sourceforge.io">KMidimon</a></li>
         <li><a href="https://kmetronome.sourceforge.io/kmetronome.shtml">KMetronome</a></li>
         </ul>
-<br><h4>Programas relacionados para Windows</h4>
+<br/><h4>Programas relacionados para Windows</h4>
         <ul class="vertical-navs">
 <li><a href="https://coolsoft.altervista.org/en/virtualmidisynth">CoolSoft Virtual MIDI Synth</a></li>
         <li><a href="http://www.midiox.com/myoke.htm">MIDI Yoke</a></li>
         <li><a href="http://www.midiox.com">MIDIOX</a></li>
         </ul>
-<br><h4>Programas relacionados para Mac OSX</h4>
+<br/><h4>Programas relacionados para Mac OSX</h4>
         <ul class="vertical-navs">
 <li><a href="https://notahat.com/simplesynth">SimpleSynth</a></li>
         <li><a href="https://notahat.com/midi_patchbay">MIDI Patchbay</a></li>
         </ul>
-<br><a href="https://sourceforge.net/projects/vmpk">
-	<img src="https://sflogo.sourceforge.net/sflogo.php?group_id=236429&amp;type=16" width="150" height="40" border="0" alt="Get Virtual MIDI Piano Keyboard at SourceForge.net. Fast, secure and Free Open Source software downloads"></a><p>Proyecto hospedado en <a href="https://sourceforge.net/projects/vmpk">SourceForge.net</a></p>
+<br/><a href="https://sourceforge.net/projects/vmpk">
+	<img src="https://sflogo.sourceforge.net/sflogo.php?group_id=236429&amp;type=16" width="150" height="40" border="0" alt="Get Virtual MIDI Piano Keyboard at SourceForge.net. Fast, secure and Free Open Source software downloads"></a><p>Proyecto hospedado en <a href="https://sourceforge.net/projects/vmpk"/>SourceForge.net</a></p>
 
-        <br><a href="https://www.gnu.org/licenses/gpl-3.0.html">
-	<img src="images/gplv3-127x51.png" alt="GPL v3 license" border="0"></a><br>
+        <br/><a href="https://www.gnu.org/licenses/gpl-3.0.html">
+	<img src="images/gplv3-127x51.png" alt="GPL v3 license" border="0"/></a><br/>
 
 	<a href="https://validator.w3.org/check?uri=referer"><img
             src="https://www.w3.org/Icons/valid-xhtml10-blue"
