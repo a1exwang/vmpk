@@ -460,14 +460,14 @@ partes de los siguientes proyectos de código abierto.</p>
         <li><a href="https://notahat.com/midi_patchbay">MIDI Patchbay</a></li>
         </ul>
 <br/><a href="https://sourceforge.net/projects/vmpk">
-	<img src="https://sflogo.sourceforge.net/sflogo.php?group_id=236429&amp;type=16" width="150" height="40" border="0" alt="Get Virtual MIDI Piano Keyboard at SourceForge.net. Fast, secure and Free Open Source software downloads"></a><p>Proyecto hospedado en <a href="https://sourceforge.net/projects/vmpk"/>SourceForge.net</a></p>
+	<img src="https://sflogo.sourceforge.net/sflogo.php?group_id=236429&amp;type=16" width="150" height="40" border="0" alt="Get Virtual MIDI Piano Keyboard at SourceForge.net. Fast, secure and Free Open Source software downloads"/></a><p>Proyecto hospedado en <a href="https://sourceforge.net/projects/vmpk"/>SourceForge.net</a></p>
 
         <br/><a href="https://www.gnu.org/licenses/gpl-3.0.html">
 	<img src="images/gplv3-127x51.png" alt="GPL v3 license" border="0"/></a><br/>
 
-	<a href="https://validator.w3.org/check?uri=referer"><img
+	<!-- <a href="https://validator.w3.org/check?uri=referer"><img
             src="https://www.w3.org/Icons/valid-xhtml10-blue"
-            alt="Valid XHTML 1.0 Transitional" height="31" width="88" border="0" /></a>
+            alt="Valid XHTML 1.0 Transitional" height="31" width="88" border="0" /></a> -->
 
     </div><!-- RIGHT-COLUMN DIV ENDS -->
 
