@@ -31,25 +31,25 @@
 
     <div id="navs">
         <ul>
-        <li class="nav"><a href="#Introduction">Introduction</a></li>
-        <li class="nav"><a href="#Getting_started">Getting started</a>
-            <ul class="sub-nav">
-            <li><a href="#MIDI_concepts">MIDI concepts</a></li>
-            <li><a href="#maps_instruments">Keyboard maps and instrument definitions</a></li>
-            <li><a href="#MIDI_Connections">MIDI connections and virtual MIDI cables</a></li>
-            </ul>
-        </li>
-        <li class="nav"><a href="#FAQ">FAQ</a></li>
-        <li class="nav"><a href="#Download">Download</a></li>
-        <li class="nav"><a href="#Installation">Installation</a>
-            <ul class="sub-nav">
-            <li><a href="#Requirements">Requirements</a></li>
-            <li><a href="#windows_notes">Notes for windows users</a></li>
-            <li><a href="#mac_notes">Notes for Mac OSX users</a></li>
-            <li><a href="#packager_notes">Notes for packagers and advanced users</a></li>
-            </ul>
-        </li>
-        <li class="nav"><a href="#Acknowledgements">Acknowledgements</a></li>
+            <li class="nav"><a href="#Introduction">Introduction</a></li>
+            <li class="nav"><a href="#Getting_started">Getting started</a>
+                <ul class="sub-nav">
+                    <li><a href="#MIDI_concepts">MIDI concepts</a></li>
+                    <li><a href="#maps_instruments">Keyboard maps and instrument definitions</a></li>
+                    <li><a href="#MIDI_Connections">MIDI connections and virtual MIDI cables</a></li>
+                </ul>
+            </li>
+            <li class="nav"><a href="#FAQ">FAQ</a></li>
+            <li class="nav"><a href="#Download">Download</a></li>
+            <li class="nav"><a href="#Installation">Installation</a>
+                <ul class="sub-nav">
+                    <li><a href="#Requirements">Requirements</a></li>
+                    <li><a href="#windows_notes">Notes for windows users</a></li>
+                    <li><a href="#mac_notes">Notes for Mac OSX users</a></li>
+                    <li><a href="#packager_notes">Notes for packagers and advanced users</a></li>
+                </ul>
+            </li>
+            <li class="nav"><a href="#Acknowledgements">Acknowledgements</a></li>
         </ul>
     </div>
 
@@ -82,7 +82,7 @@ one. It is a wonderful piece of software and has served us well for many years.
 Thanks!</p>
 
 <p>VMPK uses a modern GUI framework: Qt5, that gives excellent features and 
-performance. <a href="http://drumstick.sourceforge.net/">Drumstick RT</a> 
+performance. <a href="https://drumstick.sourceforge.io/">Drumstick RT</a> 
 provides MIDI input/output features. Both frameworks are
 free and platform independent, available for Linux, Windows and Mac OSX.</p>
 
@@ -99,12 +99,12 @@ in Sonar.</p>
 <p>This software is still in development. See the TODO file for a list of 
 pending features. Please feel free to contact the author to ask questions, 
 report bugs, and propose new features. You can use the tracking system at
-<a href="http://sourceforge.net/p/vmpk/_list/tickets">SourceForge
+<a href="https://sourceforge.net/p/vmpk/_list/tickets">SourceForge
 project site</a>.</p>
-<p>Copyright (C) 2008-2015, Pedro Lopez-Cabanillas <b>&lt;plcl AT
+<p>Copyright (C) 2008-2020, Pedro Lopez-Cabanillas <b>&lt;plcl AT
 users.sourceforge.net&gt; </b> and others.</p>
 <p>Virtual MIDI Piano Keyboard is free software licensed under the terms of the
-<a href="http://www.gnu.org/copyleft/gpl.html">GPL v3 license</a>.</p>
+<a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL v3 license</a>.</p>
 
 <div class="in-text-image">
 <a href="images/vmpk-0.3.0-linux.png" title="VMPK in Linux" rel="lightbox[gallery]">
@@ -130,7 +130,7 @@ instruments enabled with MIDI interfaces typically have two DIN sockets labeled 
 MIDI OUT. Sometimes there is a third socket labeled MIDI THRU.  To connect a MIDI 
 instrument to another one, you need a MIDI cable attached to the MIDI OUT socket of the 
 sending instrument, and to the MIDI IN of the receiving one. You can find more information and
-tutorials like <a href="http://home.roadrunner.com/~jgglatt/tutr/whatmidi.htm">this one</a> all
+tutorials like <a href="https://www.midi.org/articles-old/tutorials">this one</a> all
 around the Net.</p>
 
 <p>There are also hardware MIDI interfaces for computers, providing MIDI IN and OUT ports, 
@@ -143,22 +143,22 @@ You usually want to connect the MIDI output from VMPK to the input of some synth
 which transforms MIDI into sound. Another common destination for the connection would 
 be a MIDI monitor that translates MIDI events into readable text. This will help you to 
 understand what kind of information is transmitted using the MIDI protocol. In Linux you can
-try <a href="http://kmidimon.sourceforge.net">KMidimon</a> and in Windows 
+try <a href="https://kmidimon.sourceforge.io">KMidimon</a> and in Windows 
 <a href="http://www.midiox.com">MIDIOX</a>.</p>
 
 <p>VMPK doesn't produce any sound. You need a MIDI software synthesizer to hear the played notes.
-I recommend you to try <a href="http://qsynth.sourceforge.net">QSynth</a>,
+I recommend you to try <a href="https://qsynth.sourceforge.io">QSynth</a>,
 a graphical front-end to <a href="http://www.fluidsynth.org">Fluidsynth</a>. In Windows you can 
 also use the "Microsoft GS Wavetable Synth" that comes with all Windows versions, or a better 
-alternative like <a href="http://coolsoft.altervista.org/virtualmidisynth">CoolSoft Virtual MIDI Synth</a>.
+alternative like <a href="https://coolsoft.altervista.org/en/virtualmidisynth">CoolSoft Virtual MIDI Synth</a>.
 Of course, an external MIDI hardware synth would be an even better approach.</p>
 
 <h3><a name="maps_instruments"></a>Keyboard maps and instrument definitions</h3>
 
 <p>VMPK can help you to change sounds in your MIDI synthesizer, but only if you provide a 
 definition for the synthesizer sounds first. The definitions are text files with the .INS 
-extension, and the same format used by <a href="http://qtractor.sourceforge.net">Qtractor</a> 
-(Linux), and <a href="http://www.cakewalk.com">Sonar</a> (Windows).</p>
+extension, and the same format used by <a href="https://qtractor.sourceforge.io">Qtractor</a> 
+(Linux), and <a href="https://www.bandlab.com/products/cakewalk">Sonar</a> (Windows).</p>
 
 <p>When you start VMPK the first time, you should open the Preferences dialog and choose a definition 
 file, and then select the instrument name among those provided by the definitions file. There should be one 
@@ -186,21 +186,20 @@ VMPK the next time.</p>
 <p>In Windows, VMPK connects automatically to the default MIDI output, which is usually the 
 "Microsoft GS Wavetable Synth", included in all Windows versions. This MIDI synthesizer produces 
 very poor quality sound, and suffers of high latency. A better (and free) alternative is 
-<a href="http://coolsoft.altervista.org/virtualmidisynth">CoolSoft Virtual MIDI Synth</a>.</p>
+<a href="https://coolsoft.altervista.org/en/virtualmidisynth">CoolSoft Virtual MIDI Synth</a>.</p>
 
 <p>To connect hardware MIDI devices you need physical MIDI cables. To connect MIDI software 
 you need virtual cables. In Windows you can use some virtual MIDI cable software, like 
 <a href="http://www.midiox.com/myoke.htm">MIDI Yoke</a>, Maple, 
-<a href="http://www.nerds.de/en/loopbe1.html">LoopBe1</a>, 
-<a href="http://www.sonycreativesoftware.com/dl/dl.aspx?dwnid=77">Sony Virtual MIDI Router</a> or
-<a href="http://www.tobias-erichsen.de/software/loopmidi.html">loopMIDI</a>.
+<a href="https://www.nerds.de/en/loopbe1.html">LoopBe1</a>, or
+<a href="https://www.tobias-erichsen.de/software/loopmidi.html">loopMIDI</a>.
 </p>
 
 <p>MIDI Yoke setup process will install the driver and a control panel applet to change the number 
 of MIDI ports that will be available (you need to restart the computer after changing this setting). 
 MIDI Yoke works sending every MIDI event written to an OUT port to the corresponding IN port. 
 For instance, VMPK can connect the output to the port 1, and another program like 
-<a href="http://qsynth.sourceforge.net">QSynth</a>  can read the same events from the port 1.</p>
+<a href="https://qsynth.sourceforge.io">QSynth</a>  can read the same events from the port 1.</p>
 
 <p>Using <a href="http://www.midiox.com/moxdown.htm">MIDIOX</a> you can add more routes between 
 MIDI Yoke ports and other system MIDI ports. This program also provides other interesting 
@@ -211,12 +210,12 @@ the player's MIDI port to send to MIDI Yoke 1. And configure VMPK Input port to 
 The player will send the events to the out port 1, which will be routed to both the input port 1 
 and at the same time to the synth port.</p>
 
-<p>In Linux, you have <a href="http://www.alsa-project.org">ALSA</a> sequencer to provide the 
+<p>In Linux, you have <a href="https://www.alsa-project.org">ALSA</a> sequencer to provide the 
 virtual cables. The ports are dynamically created when you start a program, so there is not a 
 fixed number of them like in MIDI Yoke.
 The command line utility "aconnect" allows to connect and disconnect the virtual MIDI cables 
 between any ports, being hardware interfaces or applications. A nice GUI utility for doing the 
-same is <a href="http://qjackctl.sourceforge.net">QJackCtl</a>. The main purpose of this 
+same is <a href="https://qjackctl.sourceforge.io">QJackCtl</a>. The main purpose of this 
 program is to control the Jack daemon (start, stop and monitor the state). Jack provides virtual 
 audio cables to connect your sound card ports and audio programs, in a similar way to the MIDI 
 virtual cables, but for digital audio data.</p>
@@ -232,10 +231,10 @@ virtual cables, but for digital audio data.</p>
 <p>Since VMPK 0.6.0 you can use the settings dialog to choose this exact number of keys.</p>
 
 <h3>There is no sound</h3>
-<p>VMPK doesn't produce any sound by itself. You need a MIDI synthesizer, and please read the documentation again.</p>
+<p>VMPK doesn't produce any sound by itself. You need a MIDI synthesizer.</p>
 
 <h3>Some keys are silent</h3>
-<p>When you select channel 10 on a standard MIDI synth, it plays percussion sounds assigned to many keys but not to all of them. On melodic channels (not channel 10) you can select patches with a limited range of notes. This is known in music as  <a href="http://en.wikipedia.org/wiki/Tessitura">Tessitura</a>.</p>
+<p>When you select channel 10 on a standard MIDI synth, it plays percussion sounds assigned to many keys but not to all of them. On melodic channels (not channel 10) you can select patches with a limited range of notes. This is known in music as  <a href="https://en.wikipedia.org/wiki/Tessitura">Tessitura</a>.</p>
 
 <h3>Patch names don't match the real sounds</h3>
 <p>You need to provide an .INS file describing exactly your synthesizer's sound set or soundfont. The included file (gmgsxg.ins) contains definitions for only standard GM, GS and XG instruments. If your MIDI synth doesn't match exactly any of them, you need to get another .INS file, or create it yourself.</p>
@@ -254,7 +253,7 @@ $ awk -f txt2ins.awk SF2NAME.txt > SF2NAME.ins
 <p>You can find the AWK script "txt2ins.awk" installed in the VMPK's data directory.</p>
 
 <h2><a name="Download"></a>Download</h2>
-<p>You can find the latest sources, Windows, and Mac OSX packages at <a href="http://sourceforge.net/projects/vmpk/files/">SourceForge project site</a>.</p>
+<p>You can find the latest sources, Windows, and Mac OSX packages at <a href="https://sourceforge.net/projects/vmpk/files/">SourceForge project site</a>.</p>
 
 <!--#include file="downloads.shtml" -->
 
@@ -262,7 +261,7 @@ $ awk -f txt2ins.awk SF2NAME.txt > SF2NAME.ins
 
 <h2><a name="Installation"></a>Installation from sources</h2>
 
-<p>Download the sources from <a href="http://sourceforge.net/projects/vmpk/files/">http://sourceforge.net/projects/vmpk/files</a>.
+<p>Download the sources from <a href="https://sourceforge.net/projects/vmpk/files/">https://sourceforge.net/projects/vmpk/files</a>.
 Unpack the sources in your home directory, and change to the unpacked dir.</p>
 
 <pre>
@@ -295,23 +294,23 @@ $ sudo make install
 <h3><a name="Requirements"></a>Requirements</h3>
 
 <p>In order to successfully build and use VMPK, you need Qt 5.1 or newer. 
-(install the -devel package for your system, or <a href="http://qt-project.org/downloads">download the open source edition</a> from qt-project.org</p>
+(install the -devel package for your system, or <a href="https://www.qt.io/download">download the open source edition</a> from qt.io</p>
 
-<p><a href="http://drumstick.sourceforge.net">Drusmtick RT</a> is required for all platforms. It uses ALSA sequencer in Linux, 
+<p><a href="https://drumstick.sourceforge.io">Drusmtick RT</a> is required for all platforms. It uses ALSA sequencer in Linux, 
 WinMM in Windows and CoreMIDI in Mac OSX, which are the native MIDI systems in each supported platform.</p>
 
-<p>The build system is based on <a href="http://www.cmake.org">CMake</a>.</p>
+<p>The build system is based on <a href="https://cmake.org">CMake</a>.</p>
 
-<p>You need also the <a href="http://gcc.gnu.org">GCC C++ compiler</a>. MinGW is a <a href="http://www.mingw.org">Windows port</a>.</p>
+<p>You need also the <a href="https://gcc.gnu.org/">GCC C++ compiler</a>. MinGW is a <a href="http://www.mingw.org">Windows port</a>.</p>
 
-<p>Optionally, you can buid a Windows setup program using <a href="http://nsis.sourceforge.net">NSIS</a>.</p>
+<p>Optionally, you can buid a Windows setup program using <a href="https://nsis.sourceforge.io">NSIS</a>.</p>
 
 
 <h3><a name="windows_notes"></a>Notes for windows users</h3>
 
 <p>To compile the sources in Windows, you need to download either the .bz2 or .gz 
 archive and uncompress it using any utility that supports the format, like 
-<a href="http://www.7-zip.org">7-Zip</a>.</p>
+<a href="https://www.7-zip.org">7-Zip</a>.</p>
 
 <p>To configure the sources, you need qmake (from Qt5) or CMake. You need to set
 the PATH including the directories for Qt5 binaries, MinGW binaries, and also
@@ -322,15 +321,15 @@ Windows.</p>
 
 <h3><a name="mac_notes"></a>Notes for Mac OSX users</h3>
 <p>You can find a precompiled universal app bundle, including Qt5 runtime libraries,  
-at the <a href="http://sourceforge.net/projects/vmpk/files/">project 
+at the <a href="https://sourceforge.net/projects/vmpk/files/">project 
 download area</a>. If you prefer to install from sources, CMake or Qmake
 can be used to build the application bundle linked to the installed system libraries. 
-You can use Qt5 either from qt-project.org or packages from 
-<a href="http://brew.sh/">Homebrew</a>.</p>
+You can use Qt5 either from qt.io or packages from 
+<a href="https://brew.sh/">Homebrew</a>.</p>
 
 <p>The build system is configured to create an universal binary (x86+ppc) into an
 app bundle. You need the Apple development tools and frameworks, as well
-as <a href="http://qt-project.org/downloads">Qt5</a>.</p>
+as <a href="https://www.qt.io/download">Qt5</a>.</p>
 
 <p>To compile VMPK using Makefiles, generated by qmake:</p>
 
@@ -356,9 +355,9 @@ $ cmake -G Xcode .
 </pre>
 
 <p>If you need something to produce noise, maybe you want to take a look to 
-<a href="http://notahat.com/simplesynth">SimpleSynth</a>,  
+<a href="https://notahat.com/simplesynth">SimpleSynth</a>,  
 <a href="http://www.fluidsynth.org/">FluidSynth</a>. For
-MIDI routing, there is also <a href="http://notahat.com/midi_patchbay">MIDI Patchbay</a>.
+MIDI routing, there is also <a href="https://notahat.com/midi_patchbay">MIDI Patchbay</a>.
 </p>
 
 <h3><a name="packager_notes"></a>Notes for packagers and advanced users</h3>
@@ -397,11 +396,11 @@ $ cmake . -DCMAKE_INSTALL_PREFIX=/usr
 open source projects. </p>
 
 <ul>
-<li>from <a href="http://qtractor.sourceforge.net">Qtractor</a>, by Rui Nuno Capela<br/>
+<li>from <a href="https://qtractor.sourceforge.io">Qtractor</a>, by Rui Nuno Capela<br/>
 Instrument definition data classes</li>
-<li><a href="http://openclipart.org/detail/366/piano-by-theresaknott">Icon and logo</a> by Theresa Knott</li>
-<li>This page uses the <a href="http://leebaillie.com/free-css-template-wordsworth-3/">Wordsworth 3</a> free template by Lee Baillie</li>
-<li>This page uses <a href="http://www.lokeshdhakar.com/projects/lightbox2/">Lightbox2</a> by Lokesh Dhakar</li>
+<li><a href="https://openclipart.org/detail/366/piano-by-theresaknott">Icon and logo</a> by Theresa Knott</li>
+<li>This page uses the <a href="https://leebaillie.com">Wordsworth 3</a> free template by Lee Baillie</li>
+<li>This page uses <a href="https://www.lokeshdhakar.com/projects/lightbox2/">Lightbox2</a> by Lokesh Dhakar</li>
 </ul>
 <p>Thank you very much!</p>
 
@@ -420,7 +419,7 @@ Instrument definition data classes</li>
         <ul class="vertical-navs">
         <li><a href="index.shtml" title="English"  class="current"><span>&raquo;</span>English</a></li>
         <li><a href="index.es.shtml" title="español"><span>&raquo;</span>español</a></li>
-        <!--<li><a href="index.fr.shtml" title="français"><span>&raquo;</span>Français</a></li>-->
+        <li><a href="index.fr.shtml" title="français"><span>&raquo;</span>Français</a></li>
         <li><a href="index.ru.shtml" title="русский"><span>&raquo;</span>Русский</a></li>
         <li><a href="index.sr.shtml" title="српски"><span>&raquo;</span>Српски</a></li>
         </ul>
@@ -453,8 +452,8 @@ Instrument definition data classes</li>
         <br/>
 
         <p class="green">
-        <script type='text/javascript' src='http://www.openhub.net/p/VMPK/widgets/project_users_logo?format=js'></script>        
-        You can support Virtual MIDI Piano Keyboard by adding it to your stack at OpenHub
+        <script type='text/javascript' src='https://www.openhub.net/p/VMPK/widgets/project_users_logo?format=js'></script>        
+        <br/>You can support Virtual MIDI Piano Keyboard by adding it to your stack at OpenHub
         </p>
 
         <br/>
@@ -467,7 +466,7 @@ Instrument definition data classes</li>
 
         <h4>Related Software (multiplatform)</h4>
         <ul class="vertical-navs">
-        <li><a href="http://qsynth.sourceforge.net">QSynth</a></li>
+        <li><a href="https://qsynth.sourceforge.io">QSynth</a></li>
         <li><a href="http://www.fluidsynth.org">FluidSynth</a></li>
         </ul>
 
@@ -475,16 +474,16 @@ Instrument definition data classes</li>
 
         <h4>Related Software for Linux</h4>
         <ul class="vertical-navs">
-        <li><a href="http://qjackctl.sourceforge.net">QjackCtl</a></li>
-        <li><a href="http://kmidimon.sourceforge.net">KMidimon</a></li>
-        <li><a href="http://kmetronome.sourceforge.net/kmetronome.shtml">KMetronome</a></li>
+        <li><a href="https://qjackctl.sourceforge.io">QjackCtl</a></li>
+        <li><a href="https://kmidimon.sourceforge.io">KMidimon</a></li>
+        <li><a href="https://kmetronome.sourceforge.io/kmetronome.shtml">KMetronome</a></li>
         </ul>
 
         <br/>
 
         <h4>Related Software for Windows</h4>
         <ul class="vertical-navs">
-        <li><a href="http://coolsoft.altervista.org/virtualmidisynth">CoolSoft Virtual MIDI Synth</a></li>
+        <li><a href="https://coolsoft.altervista.org/en/virtualmidisynth">CoolSoft Virtual MIDI Synth</a></li>
         <li><a href="http://www.midiox.com/myoke.htm">MIDI Yoke</a></li>
         <li><a href="http://www.midiox.com">MIDIOX</a></li>
         </ul>
@@ -493,27 +492,27 @@ Instrument definition data classes</li>
 
         <h4>Related Software for Mac OSX</h4>
         <ul class="vertical-navs">
-        <li><a href="http://notahat.com/simplesynth">SimpleSynth</a></li>
-        <li><a href="http://notahat.com/midi_patchbay">MIDI Patchbay</a></li>
+        <li><a href="https://notahat.com/simplesynth">SimpleSynth</a></li>
+        <li><a href="https://notahat.com/midi_patchbay">MIDI Patchbay</a></li>
         </ul>
 
         <br/>
 
-        <a href="http://sourceforge.net/projects/vmpk">
-        <img src="http://sflogo.sourceforge.net/sflogo.php?group_id=236429&amp;type=16" width="150" height="40" border="0" alt="Get Virtual MIDI Piano Keyboard at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
-        <p>Project hosted by <a href="http://sourceforge.net/projects/vmpk">SourceForge.net</a></p>
+        <a href="https://sourceforge.net/projects/vmpk">
+        <img src="https://sflogo.sourceforge.net/sflogo.php?group_id=236429&amp;type=16" width="150" height="40" border="0" alt="Get Virtual MIDI Piano Keyboard at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
+        <p>Project hosted by <a href="https://sourceforge.net/projects/vmpk">SourceForge.net</a></p>
 
         <br/>
 
-	<a href="http://www.gnu.org/copyleft/gpl.html">
+	<a href="https://www.gnu.org/licenses/gpl-3.0.html">
 	<img src="images/gplv3-127x51.png" alt="GPL v3 license" border="0" />
 	</a>
 
 	<br/>
 
-        <!-- a href="http://validator.w3.org/check?uri=referer"><img
-            src="http://www.w3.org/Icons/valid-xhtml10-blue"
-            alt="Valid XHTML 1.0 Transitional" height="31" width="88" border="0" /></a -->
+<!--    <a href="https://validator.w3.org/check?uri=referer"><img
+        src="https://www.w3.org/Icons/valid-xhtml10-blue"
+        alt="Valid XHTML 1.0 Transitional" height="31" width="88" border="0" /></a>-->
 
     </div><!-- RIGHT-COLUMN DIV ENDS -->
 

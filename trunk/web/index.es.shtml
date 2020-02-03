@@ -31,37 +31,38 @@
 
     <div id="navs">
         <ul>
-<li class="nav"><a href="#Introduction">Introducción</a></li>
-        <li class="nav">
-<a href="#Getting_started">Primeros pasos</a><ul class="sub-nav">
-<li><a href="#MIDI_concepts">Conceptos MIDI</a></li>
-            <li><a href="#maps_instruments">Mapas de teclado y definiciones de instrumentos</a></li>
-            <li><a href="#MIDI_Connections">Conexiones MIDI y cables MIDI virtuales</a></li>
-            </ul>
-</li>
-        <li class="nav"><a href="#FAQ">Preguntas frecuentes</a></li>
-        <li class="nav"><a href="#Download">Descargar</a></li>
-        <li class="nav">
-<a href="#Installation">Instalación</a><ul class="sub-nav">
-<li><a href="#Requirements">Requisitos</a></li>
-            <li><a href="#windows_notes">Notas para usuarios de Windows</a></li>
-            <li><a href="#mac_notes">Notas para usuarios de Mac OSX</a></li>
-            <li><a href="#packager_notes">Notas para empaquetadores y usuarios avanzados</a></li>
-            </ul>
-</li>
-        <li class="nav"><a href="#Acknowledgements">Agradecimientos</a></li>
+            <li class="nav"><a href="#Introduction">Introducción</a></li>
+            <li class="nav"><a href="#Getting_started">Primeros pasos</a>
+                <ul class="sub-nav">
+                    <li><a href="#MIDI_concepts">Conceptos MIDI</a></li>
+                    <li><a href="#maps_instruments">Mapas de teclado y definiciones de instrumentos</a></li>
+                    <li><a href="#MIDI_Connections">Conexiones MIDI y cables MIDI virtuales</a></li>
+                </ul>
+            </li>
+            <li class="nav"><a href="#FAQ">Preguntas frecuentes</a></li>
+            <li class="nav"><a href="#Download">Descargar</a></li>
+            <li class="nav"><a href="#Installation">Instalación</a>
+                <ul class="sub-nav">
+                    <li><a href="#Requirements">Requisitos</a></li>
+                    <li><a href="#windows_notes">Notas para usuarios de Windows</a></li>
+                    <li><a href="#mac_notes">Notas para usuarios de Mac OSX</a></li>
+                    <li><a href="#packager_notes">Notas para empaquetadores y usuarios avanzados</a></li>
+                </ul>
+            </li>
+            <li class="nav"><a href="#Acknowledgements">Agradecimientos</a></li>
         </ul>
-</div>
+    </div>
 
     <div id="content">
 
     <div class="in-text-image">
-<img src="images/vmpk_605x334.png" name="screenshot" alt="VMPK 0.3.0"/><p>VMPK 0.3.0</p>
+        <img src="images/vmpk_605x334.png" name="screenshot" alt="VMPK 0.3.0"/>
+        <p>VMPK 0.3.0</p>
     </div>
 
-<h2>
-<a name="Introduction"></a>Introducción</h2>
-<p>El teclado de piano MIDI virtual (VMPK) es un generador y receptor de eventos MIDI. 
+<h2><a name="Introduction"></a>Introducción</h2>
+<p>
+El teclado de piano MIDI virtual (VMPK) es un generador y receptor de eventos MIDI. 
 No produce ningún sonido por si mismo, pero puede ser usado para dirigir un
 sintetizador MIDI (ya sea hardware o software, interno o externo). 
 Puedes usar el teclado del ordenador para tocar notas MIDI, y también el ratón.
@@ -98,7 +99,7 @@ características pendientes. Por favor, no dudes en contactar con el autor para 
 preguntas, informar de fallos, y proponer nuevas funcionalidades. Puedes usar el 
 sistema de seguimiento en el 
 <a href="https://sourceforge.net/p/vmpk/_list/tickets">sitio del proyecto de SourceForge</a>.</p>
-<p>Copyright (C) 2008-2015, Pedro Lopez-Cabanillas <b>&lt; plcl AT
+<p>Copyright (C) 2008-2020, Pedro Lopez-Cabanillas <b>&lt; plcl AT
 users.sourceforge.net&gt; </b> y otros.</p>
 <p>Virtual MIDI Piano Keyboard es software libre bajo los términos de la 
 <a href="https://www.gnu.org/licenses/gpl-3.0.html">licencia GPL v3</a>.</p>
@@ -116,11 +117,9 @@ users.sourceforge.net&gt; </b> y otros.</p>
    <img src="images/vmpk-0.3.0-win-big.jpg" alt="VMPK ampliado, en Windows" border="0"/></a><p>Galería de capturas de pantalla</p>
 </div>
 
-<h2>
-<a name="Getting_started"></a>Primeros pasos</h2>
+<h2><a name="Getting_started"></a>Primeros pasos</h2>
 
-<h3>
-<a name="MIDI_concepts"></a>Conceptos MIDI</h3>
+<h3><a name="MIDI_concepts"></a>Conceptos MIDI</h3>
 
 <p>MIDI es un estándar industrial para conectar instrumentos musicales. Se basa en la 
 transmisión de las acciones llevadas a cabo por un músico tocando un instrumento hacia 
@@ -150,8 +149,7 @@ usar el "Microsoft GS Wavetable Synth" que viene con todas las versiones de Wind
 mejor como <a href="https://coolsoft.altervista.org/en/virtualmidisynth">CoolSoft Virtual MIDI Synth</a>.
 Por supuesto, un sintetizador externo MIDI sería una aun mejor solución.</p>
 
-<h3>
-<a name="maps_instruments"></a>Mapas de teclado y definiciones de instrumentos</h3>
+<h3><a name="maps_instruments"></a>Mapas de teclado y definiciones de instrumentos</h3>
 
 <p>VMPK puede ayudarte a cambiar los sonidos en tu sintetizador MIDI, pero solo si antes le proporcionas 
 una definición de los sonidos del sintetizador. Las definiciones son archivos de texto con la 
@@ -179,8 +177,7 @@ El siguiente inicio de VMPK utilizará el último mapa cargado. De hecho, todas 
 bancos y programas MIDI seleccionados, así como los valores de los controladores serán guardados 
 al finalizar el programa, y recuperados de nuevo al iniciar VMPK en la siguiente ocasión.</p>
 
-<h3>
-<a name="MIDI_Connections"></a>Conexiones MIDI y cables MIDI virtuales</h3>
+<h3><a name="MIDI_Connections"></a>Conexiones MIDI y cables MIDI virtuales</h3>
 
 <p>En Windows, VMPK se conecta automáticamente a la salida MIDI por defecto, que normalmente es el 
 "Microsoft GS Wavetable Synth", incluido en todas las versiones de Windows. Este sintetizador MIDI 
@@ -221,8 +218,7 @@ una forma similar a los cables MIDI virtuales, pero para datos de audio digital.
 <img src="images/qjackctl-conn.png" name="qjackctl" alt="ventana de conextiones de qjackctl"/><p>Conexiones de QJackCtl en Linux</p>
 </div>
 
-<h2>
-<a name="FAQ"></a>Preguntas frecuentes</h2>
+<h2><a name="FAQ"></a>Preguntas frecuentes</h2>
 
 <h3>¿Como mostrar 88 teclas?</h3>
 <p>Desde VMPK 0.6.0 puedes usar el diálogo Preferencias para seleccionar este número exacto de teclas.</p>
@@ -262,9 +258,9 @@ href="https://sourceforge.net/projects/vmpk/files/">sitio del proyecto en Source
 
 <p>Si usted distribuye paquetes de VMPK para otra distribución, envíeme un email e incluiré un enlace a su sitio aquí.</p>
 
-<h2><a name="#Installation">Instalación desde fuentes</a></h2>
+<h2><a name="Installation">Instalación desde fuentes</a></h2>
 
-<p>Descarga los fuentes desde <a href="https://sourceforge.net/projects/vmpk/files/">http://sourceforge.net/projects/vmpk/files</a>.
+<p>Descarga los fuentes desde <a href="https://sourceforge.net/projects/vmpk/files/">https://sourceforge.net/projects/vmpk/files</a>.
 Descomprime los fuentes en el directorio personal, y cambia al directorio descomprimido.</p>
 
 <pre>$ cd vmpk-x.y.z</pre>
@@ -285,8 +281,7 @@ $ qmake</pre>
 
 <pre>$ sudo make install</pre>
 
-<h3>
-<a name="Requirements"></a>Requisitos</h3>
+<h3><a name="Requirements"></a>Requisitos</h3>
 
 <p>Para compilar y usar satisfactoriamente VMPK se necesita Qt 5.1 o posterior.
 (instala el paquete -devel de tu sistema, o bien <a href="https://www.qt.io/download">descarga la 
@@ -323,7 +318,7 @@ CMake para Windows.</p>
 tiempo de ejecución en el <a href="https://sourceforge.net/projects/vmpk/files/">
 área de descargas del proyecto</a>. Si prefieres la instalación desde fuentes, puedes usar
 CMake o Qmake para construir la aplicación enlazada a las bibliotecas del sistema instaladas.
-Puedes usar Qt5 obtenido desde qt-project.org o bien el paquete distribuido por 
+Puedes usar Qt5 obtenido desde qt.io o bien el paquete distribuido por 
 <a href="https://brew.sh">Homebrew</a>.</p>
 
 <p>El sistema de construcción está preparado para producir un binario universal (x86+ppc) en un paquete de aplicación. Necesitas las herramientas de desarrollo de Apple, así como el kit de desarrollo <a href="https://www.qt.io/download">Qt5</a>.</p>
@@ -375,8 +370,7 @@ $ cmake .</pre>
 <p></p>
 
 
-<h2>
-<a name="Acknowledgements"></a>Agradecimientos</h2>
+<h2><a name="Acknowledgements"></a>Agradecimientos</h2>
 
 <p>Adicionalmente a las herramientas anteriormente mencionadas, VMPK utiliza
 partes de los siguientes proyectos de código abierto.</p>
@@ -385,7 +379,7 @@ partes de los siguientes proyectos de código abierto.</p>
 <li>de <a href="https://qtractor.sourceforge.io">Qtractor</a>, por Rui Nuno Capela<br/>Clases de definición de instrumentos</li>
 <li>
 <a href="https://openclipart.org/detail/366/piano-by-theresaknott">Icono y logo</a> por Theresa Knott</li>
-<li>Esta página utiliza la plantilla gratuita <a href="http://leebaillie.com/free-css-template-wordsworth-3/">Wordsworth 3</a>  de Lee Baillie</li>
+<li>Esta página utiliza la plantilla gratuita Wordsworth 3 de <a href="https://leebaillie.com"></a>Lee Baillie</a></li>
 <li>Esta página utiliza <a href="https://www.lokeshdhakar.com/projects/lightbox2/">Lightbox2</a> de Lokesh Dhakar</li>
 </ul>
 <p>¡Muchas Gracias!</p>
@@ -402,7 +396,7 @@ partes de los siguientes proyectos de código abierto.</p>
         <ul class="vertical-navs">
         <li><a href="index.shtml" title="English"><span>&raquo;</span>English</a></li>
         <li><a href="index.es.shtml" title="español" class="current"><span>&raquo;</span>español</a></li>
-        <!--<li><a href="index.fr.shtml" title="français"><span>&raquo;</span>Français</a></li>-->
+        <li><a href="index.fr.shtml" title="français"><span>&raquo;</span>Français</a></li>
         <li><a href="index.ru.shtml" title="русский"><span>&raquo;</span>Русский</a></li>
         <li><a href="index.sr.shtml" title="српски"><span>&raquo;</span>Српски</a></li>
         </ul>
@@ -428,9 +422,9 @@ partes de los siguientes proyectos de código abierto.</p>
 </li>
         <li><a href="#Acknowledgements">Agradecimientos</a></li>
         </ul>
-<br/><p class="green">
-        <script type='text/javascript' src='http://www.openhub.net/p/VMPK/widgets/project_users_logo?format=js'></script>        
-        Puedes ayudar al proyecto Virtual MIDI Piano Keyboard añadiéndolo a tu perfil de OpenHub
+        <br/><p class="green">
+        <script type='text/javascript' src='https://www.openhub.net/p/VMPK/widgets/project_users_logo?format=js'></script>        
+        <br/>Puedes ayudar al proyecto Virtual MIDI Piano Keyboard añadiéndolo a tu perfil de OpenHub
         </p>
 
         <br/><h4>Enlaces del proyecto</h4>
@@ -465,9 +459,9 @@ partes de los siguientes proyectos de código abierto.</p>
         <br/><a href="https://www.gnu.org/licenses/gpl-3.0.html">
 	<img src="images/gplv3-127x51.png" alt="GPL v3 license" border="0"/></a><br/>
 
-	<!-- <a href="https://validator.w3.org/check?uri=referer"><img
+<!--	<a href="https://validator.w3.org/check?uri=referer"><img
             src="https://www.w3.org/Icons/valid-xhtml10-blue"
-            alt="Valid XHTML 1.0 Transitional" height="31" width="88" border="0" /></a> -->
+            alt="Valid XHTML 1.0 Transitional" height="31" width="88" border="0" /></a>-->
 
     </div><!-- RIGHT-COLUMN DIV ENDS -->
 
